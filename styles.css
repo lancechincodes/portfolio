@@ -1,15 +1,14 @@
-/*LARGE SECTIONS*/
+/*--------------LARGE SECTIONS--------------*/
 body {
     background: black;
     color: white;
-    /* margin: 0 auto; */
 }
 
 main {
     margin-top: 12vh;;
 }
 
-/*NAVIGATION*/
+/*--------------NAVIGATION BAR--------------*/
 .nav-bar {
     display: flex;
     border: 3px solid white;
@@ -50,23 +49,37 @@ main {
     padding: 10px;
 }
 
-/*HOME*/
+/*--------------HOME PAGE--------------*/
 #home-page {
-    height: 100vh
-}
-
-#greeting-message {
-
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #greeting-message h1 {
     font-family: 'Bangers', cursive;
+    font-size: 120px;
+    margin: 0;
+
 }
 
 #greeting-message h3 {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 30px;
+
 }
 
 #greeting-message #oval {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 7px;
+    line-height: 80px;
+    background: white;
+    border-radius: 50%;
+    color: black;
 
 }
