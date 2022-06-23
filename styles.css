@@ -6,22 +6,14 @@ body {
 }
 
 main {
-    margin-top: 10vh;;
-}
-
-/*HOME*/
-#greeting h1 {
-    font-family: 'Bangers', cursive;
-}
-
-#greeting h3 {
-    font-family: 'Roboto', sans-serif;
+    margin-top: 12vh;;
 }
 
 /*NAVIGATION*/
 .nav-bar {
     display: flex;
     border: 3px solid white;
+    background: black;
     height: 10vh;
     position: fixed;
     /* To make the nav bar fill the width and start from the */
@@ -58,3 +50,23 @@ main {
     padding: 10px;
 }
 
+/*HOME*/
+#home-page {
+    height: 100vh
+}
+
+#greeting-message {
+
+}
+
+#greeting-message h1 {
+    font-family: 'Bangers', cursive;
+}
+
+#greeting-message h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#greeting-message #oval {
+
+}
