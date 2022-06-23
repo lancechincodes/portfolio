@@ -1,0 +1,60 @@
+/*LARGE SECTIONS*/
+body {
+    background: black;
+    color: white;
+    /* margin: 0 auto; */
+}
+
+main {
+    margin-top: 10vh;;
+}
+
+/*HOME*/
+#greeting h1 {
+    font-family: 'Bangers', cursive;
+}
+
+#greeting h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*NAVIGATION*/
+.nav-bar {
+    display: flex;
+    border: 3px solid white;
+    height: 10vh;
+    position: fixed;
+    /* To make the nav bar fill the width and start from the */
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#nav-icons-div {
+    width: 30vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#nav-icons-div .logo {
+    width: 75px;
+}
+
+#nav-words-div {
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#nav-words-div a {
+    color:white;
+    text-decoration: none;
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    padding: 10px;
+}
+
