@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
     <title>Lance Chin Portfolio</title>
@@ -44,7 +44,7 @@
                 <img id="portrait" src="images/lance-pictures/lance-portrait.png" alt="Lance Chin Portrait">
             </div>
             <article id="about-me-description">
-                <h1>Hi, nice to meet you!</h1>
+                <h1>Nice to meet you!</h1>
                 <p>
                     Currently, I am attending General Assembly's Software Engineering Immersive 
                     program where I am fueling my curiosity to learn and apply the latest technologies.
@@ -57,25 +57,53 @@
         </section>
         <section id="resume-page">
             <div id="resume-grid">
-                <div class="rectangle" id="00">
-                    <div class="hover-effect hide-border">Education</div>
+                <div class="rectangle">
+                    <div id="education" class="hover-effect hide-border">Education</div>
                 </div>
-                <div class="rectangle" id="01">
-                    <div class="hover-effect hide-border">Skills</div>
+                <div class="rectangle">
+                    <div id="skills" class="hover-effect hide-border">Skills</div>
                 </div>
-                <div class="rectangle" id="02">
-                    <div class="hover-effect hide-border">Work Experience</div>
+                <div class="rectangle">
+                    <div id="work-experience" class="hover-effect hide-border">Work Experience</div>
                 </div>
-                <div class="rectangle" id="10">
-                    <div class="hover-effect hide-border">Certifications</div>
+                <div class="rectangle">
+                    <div id="certifications" class="hover-effect hide-border">Certifications</div>
                 </div>
-                <div class="rectangle" id="11">
-                    <div class="hover-effect hide-border">Leadership</div>
+                <div class="rectangle">
+                    <div id="leadership" class="hover-effect hide-border">Leadership</div>
                 </div>
-                <div class="rectangle" id="12">
-                    <div class="hover-effect hide-border">Honors & Awards</div>
+                <div class="rectangle">
+                    <div id="honors-and-awards" class="hover-effect hide-border">Honors & Awards</div>
                 </div>
             </div>
+
+            <div id="educational-modal" class="modal">
+                <div class="modal-text">
+                    <h1>Education</h1>
+                    <div class="first-item">
+                        <img class="resume-logo" src="images/logos/ga-logo.png" alt="General Assembly Logo">
+                        <ul class="resume-list">
+                            <li>General Assembly</li>
+                            <li>Software Engineering Immersive Program</li>
+                            <li>June 2022 - August 2022</li>
+                        </ul>
+                    </div>
+                    <div class="second-item">
+                        <img class="resume-logo" src="images/logos/uh-logo.jpeg" alt="University of Houston Logo">
+                        <ul class="resume-list">
+                            <li>University of Houston</li>
+                            <li>Major: Mechanical Engineering</li>
+                            <li>Minor: Mathematics</li>
+                            <li>August 2018 - May 2022</li>
+                            <li>GPA: 3.98</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="modal-close-button" href="#resume-page">CLOSE</a>
+                </div>
+            </div>
+
         </section>
         <section id="projects-page"></section>
         <section id="interests-page"></section>

@@ -20,6 +20,7 @@ section {
     top: 0;
     right: 0;
     left: 0;
+    z-index: 2;
 }
 
 #nav-icons-div {
@@ -134,7 +135,8 @@ section {
 #resume-page {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-content: center;    
+    position: relative;
 }
 
 #resume-grid {
@@ -157,21 +159,91 @@ section {
     align-items: center;
 }
 
+.hover-effect {
+    padding: 20px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.hide-border {
+    border: none;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    height: 73vh;
+    width: 40vw;
+    background-color: black;
+    border: 3px solid white;
+    z-index: 1;   
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 10vh; /* Top counterreacts fixed navbar */
+    margin: auto; 
+}
+
+.modal-text {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.modal-text h1 {
+    font-family: 'Bangers', cursive;   
+    font-size: 65px; 
+    text-align: center;
+    margin: 0;
+}
+
+.first-item, .second-item {
+    display: flex;
+    margin: 20px;
+}
+
+.resume-logo {
+    width: 130px;
+    height: 130px;
+    border: 3px solid white;
+    align-self: center;
+}
+
+.resume-list {
+    font-size: 20px;
+    margin-left: 3vh;
+    line-height: 1.5;
+    list-style-type: square;
+}
+
+.resume-list li:first-of-type {
+    font-weight: 700;
+}
+
+.modal-footer {
+    text-align: right;
+}
+
+.modal-close-button {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    border: 3px solid white;
+    font-family: 'Bangers', cursive;   
+    letter-spacing: 3px;
+    margin-right: 25px;
+}
 
 /*--------------PROJECTS PAGE--------------*/
 #projects-page {
     display: flex;
     align-content: center;
     background: rgb(15, 15, 15);
-}
-
-.hover-effect {
-    padding: 20px;
-    border: 1px solid white;
-}
-
-.hide-border {
-    border: none;
 }
 
 /*--------------INTERESTS PAGE--------------*/
