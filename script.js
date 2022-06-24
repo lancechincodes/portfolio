@@ -5,6 +5,8 @@
 
 
 /*--------------CACHED ELEMENT REFERENCES--------------*/
+const homeButton = document.querySelector('#home-button')
+
 const navWordsDiv = document.querySelector('#nav-words-div')
 const aboutButton = document.querySelector('#about-button')
 const resumeButton = document.querySelector('#resume-button')
@@ -16,6 +18,14 @@ const educationalModal = document.querySelector('#educational-modal')
 const modalCloseButton = document.querySelector('.modal-close-button')
 
 /*--------------FUNCTIONS--------------*/
+const onMouseOverHomeButton = function(e) {
+    e.target.setAttribute('src', 'images/logos/lc-logo-white.png')
+}
+
+const onMouseOutHomeButton = function(e) {
+    e.target.setAttribute('src', 'images/logos/lc-logo-black.png')
+}
+
 const onMouseOverNav = function(e) {
     if (e.target.getAttribute('id') === 'about-button') {
         resumeButton.style.opacity = .5
@@ -73,6 +83,9 @@ const closeModal = function() {
 }
 
 /*--------------EVENT LISTENERS--------------*/
+homeButton.addEventListener('mouseover', onMouseOverHomeButton)
+homeButton.addEventListener('mouseout', onMouseOutHomeButton)
+
 navWordsDiv.addEventListener('mouseover', onMouseOverNav)
 navWordsDiv.addEventListener('mouseout', onMouseOutNav)
 

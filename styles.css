@@ -32,7 +32,8 @@ section {
 }
 
 #nav-icons-div .logo {
-    width: 75px;
+    width: 70px;
+    height: auto;
 }
 
 #nav-words-div {
