@@ -66,7 +66,7 @@ section {
 #greeting-message h3 {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
 }
 
@@ -86,7 +86,7 @@ section {
 #about-page {
     display: flex;
     align-content: center;
-    background: rgb(30, 30, 30);
+    background: rgb(15, 15, 15);
 }
 
 #about-me-portrait {
@@ -131,9 +131,38 @@ section {
 }
 
 /*--------------RESUME PAGE--------------*/
+#resume-page {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#resume-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(2, 200px);
+    margin-top: 10vh; /* counterreact fixed navbar */
+    justify-content: center;
+    align-content: center;
+}
+
+.rectangle {
+    font-family: 'Bangers', cursive;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /*--------------PROJECTS PAGE--------------*/
-
+#projects-page {
+    display: flex;
+    align-content: center;
+    background: rgb(15, 15, 15);
+}
 
 /*--------------INTERESTS PAGE--------------*/
