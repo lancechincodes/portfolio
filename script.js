@@ -5,9 +5,9 @@
 
 
 /*--------------CACHED ELEMENT REFERENCES--------------*/
-const homeButton = document.querySelector('#home-button')
-
+const navIconsDiv = document.querySelector('#nav-icons-div')
 const navWordsDiv = document.querySelector('#nav-words-div')
+
 const aboutButton = document.querySelector('#about-button')
 const resumeButton = document.querySelector('#resume-button')
 const projectsButton = document.querySelector('#projects-button')
@@ -18,15 +18,31 @@ const educationalModal = document.querySelector('#educational-modal')
 const modalCloseButton = document.querySelector('.modal-close-button')
 
 /*--------------FUNCTIONS--------------*/
-const onMouseOverHomeButton = function(e) {
-    e.target.setAttribute('src', 'images/logos/lc-logo-white.png')
+const onMouseOverNavIcons = function(e) {
+    if (e.target.getAttribute('id') === 'home-button') {
+        e.target.setAttribute('src', 'images/logos/lc-logo-alt.png')
+    }
+    else if (e.target.getAttribute('id') === 'github-button') {
+        e.target.setAttribute('src', 'images/logos/github-logo-alt.png')
+    }
+    else if (e.target.getAttribute('id') === 'linkedin-button') {
+        e.target.setAttribute('src', 'images/logos/linkedin-logo-alt.png')
+    }
 }
 
-const onMouseOutHomeButton = function(e) {
-    e.target.setAttribute('src', 'images/logos/lc-logo-black.png')
+const onMouseOutNavIcons = function(e) {
+    if (e.target.getAttribute('id') === 'home-button') {
+        e.target.setAttribute('src', 'images/logos/lc-logo.png')
+    }
+    else if (e.target.getAttribute('id') === 'github-button') {
+        e.target.setAttribute('src', 'images/logos/github-logo.png')
+    }
+    else if (e.target.getAttribute('id') === 'linkedin-button') {
+        e.target.setAttribute('src', 'images/logos/linkedin-logo.png')
+    }
 }
 
-const onMouseOverNav = function(e) {
+const onMouseOverNavWords = function(e) {
     if (e.target.getAttribute('id') === 'about-button') {
         resumeButton.style.opacity = .5
         projectsButton.style.opacity = .5
@@ -49,7 +65,7 @@ const onMouseOverNav = function(e) {
     }
 }
 
-const onMouseOutNav = function(e) {
+const onMouseOutNavWords = function(e) {
     aboutButton.style.opacity = 1
     resumeButton.style.opacity = 1
     projectsButton.style.opacity = 1
@@ -83,11 +99,11 @@ const closeModal = function() {
 }
 
 /*--------------EVENT LISTENERS--------------*/
-homeButton.addEventListener('mouseover', onMouseOverHomeButton)
-homeButton.addEventListener('mouseout', onMouseOutHomeButton)
+navIconsDiv.addEventListener('mouseover', onMouseOverNavIcons)
+navIconsDiv.addEventListener('mouseout', onMouseOutNavIcons)
 
-navWordsDiv.addEventListener('mouseover', onMouseOverNav)
-navWordsDiv.addEventListener('mouseout', onMouseOutNav)
+navWordsDiv.addEventListener('mouseover', onMouseOverNavWords)
+navWordsDiv.addEventListener('mouseout', onMouseOutNavWords)
 
 resumeGrid.addEventListener('mouseover', onMouseOverResume)
 resumeGrid.addEventListener('mouseout', onMouseOutResume)
