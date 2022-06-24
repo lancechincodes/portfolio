@@ -2,18 +2,19 @@
 body {
     background: black;
     color: white;
+    margin: 0;
 }
 
-main {
-    margin-top: 12vh;;
+section {
+    height: 100vh;
 }
 
 /*--------------NAVIGATION BAR--------------*/
-.nav-bar {
+#nav-bar {
+    height: 10vh;
     display: flex;
     border: 3px solid white;
     background: black;
-    height: 10vh;
     position: fixed;
     /* To make the nav bar fill the width and start from the */
     top: 0;
@@ -46,12 +47,11 @@ main {
     text-decoration: none;
     font-family: 'Bangers', cursive;
     font-size: 30px;
-    padding: 10px;
+    padding: 20px;
 }
 
 /*--------------HOME PAGE--------------*/
 #home-page {
-    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,14 +61,13 @@ main {
     font-family: 'Bangers', cursive;
     font-size: 120px;
     margin: 0;
-
 }
 
 #greeting-message h3 {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     font-size: 30px;
-
+    font-weight: 300;
 }
 
 #greeting-message #oval {
@@ -81,5 +80,60 @@ main {
     background: white;
     border-radius: 50%;
     color: black;
+}
+
+/*--------------ABOUT PAGE--------------*/
+#about-page {
+    display: flex;
+    align-content: center;
+    background: rgb(30, 30, 30);
+}
+
+#about-me-portrait {
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin-top: 10vh; /* counterreact fixed navbar */
+}
+
+#about-me-portrait #portrait {
+    width: 450px;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+#about-me-description {
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10vh; /* counterreact fixed navbar */
+}
+
+#about-me-description h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 70px;
+    margin: 20px;
+    width: 90%;
+}
+
+#about-me-description p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 1.8;
+    width: 90%;
 
 }
+
+/*--------------RESUME PAGE--------------*/
+
+
+/*--------------PROJECTS PAGE--------------*/
+
+
+/*--------------INTERESTS PAGE--------------*/

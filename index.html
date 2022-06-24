@@ -5,43 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
     <title>Lance Chin Portfolio</title>
 </head>
 <body>
-    <header>
-        <nav class ="nav-bar" role="navigation" aria="Navigation">
-            <div id="nav-icons-div">
-                <a href="#home-page">
-                    <img class="logo" id="home-button" src="images/logos/lance-logo-square.png">
-                </a>
-                <a href="https://github.com/lancechincodes" target="_blank">
-                    <img class="logo" id="github-logo" src="images/logos/github-logo.png" alt="Github Icon">
-                </a>
-                <a href="https://www.linkedin.com/in/lance-chin/" target="_blank">
-                    <img class="logo" src="images/logos/linkedin-logo.png" alt="LinkedIn Icon">
-                </a>
-            </div>
-            <div id="nav-words-div">
-                <a href="#about-page">About</a>
-                <a href="#resume-page">Resume</a>
-                <a href="#projects-page">Projects</a>
-                <a href="#interests-page">Interests</a>
-            </div>
-        </nav>
-    </header>
+    <nav id="nav-bar" role="navigation" aria="Navigation">
+        <div id="nav-icons-div">
+            <a href="#home-page">
+                <img class="logo" id="home-button" src="images/logos/lance-logo-square.png">
+            </a>
+            <a href="https://github.com/lancechincodes" target="_blank">
+                <img class="logo" id="github-logo" src="images/logos/github-logo.png" alt="Github Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/lance-chin/" target="_blank">
+                <img class="logo" src="images/logos/linkedin-logo.png" alt="LinkedIn Icon">
+            </a>
+        </div>
+        <div id="nav-words-div">
+            <a href="#about-page">About</a>
+            <a href="#resume-page">Resume</a>
+            <a href="#projects-page">Projects</a>
+            <a href="#interests-page">Interests</a>
+        </div>
+    </nav>
     <main>
         <section id="home-page">
             <div id="greeting-message">
-                <h3>Hi my name is</h3>
+                <h3>Presenting</h3>
                 <h1>Lance Chin</h1>
                 <div id="oval">SOFTWARE ENGINEER</div>
             </div>
         </section>
-        <section id="about-page"></section>
+        <section id="about-page">
+            <div id="about-me-portrait">
+                <img id="portrait" src="images/lance-pictures/lance-portrait.png" alt="Lance Chin Portrait">
+            </div>
+            <article id="about-me-description">
+                <h1>Hi nice to Meet You!</h1>
+                <p>
+                    Currently, I am attending General Assembly's Software Engineering Immersive 
+                    program where I am fueling my curiosity to learn and apply the latest technologies.
+                    With a background in mechanical engineering and as the former president of the 
+                    Society of Asian Scientists and Engineers at the University of Houston, I thrive
+                    in challenging environments and find fulfillment in solving problems that improve 
+                    the daily life of others.
+                </p> 
+            </article>
+        </section>
         <section id="resume-page"></section>
         <section id="projects-page"></section>
         <section id="interests-page"></section>
