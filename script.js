@@ -170,14 +170,16 @@ const onClickNextCarousel = function() {
     project[currentProjectIndex].style.display = 'block'
 }
 
-const onMouseOverLearnMore = function(e) {
-    e.target.style.background = 'white'
-    e.target.style.color = 'black'
+const onMouseOverProjectFooter = function() {
+    for (let i = 0; i < projectFooter.length; i++) {
+        projectFooter[i].classList.add('project-footer-hover-effect')
+    }
 }
 
-const onMouseOutLearnMore = function(e) {
-    e.target.style.background = 'black'
-    e.target.style.color = 'white'
+const onMouseOutProjectFooter = function() {
+    for (let i = 0; i < projectFooter.length; i++) {
+        projectFooter[i].classList.remove('project-footer-hover-effect')
+    }
 }
 
 /*--------------EVENT LISTENERS--------------*/
@@ -204,6 +206,6 @@ nextButton.addEventListener('mouseout', onMouseOutNextCarousel)
 prevButton.addEventListener('click', onClickPrevCarousel)
 nextButton.addEventListener('click', onClickNextCarousel)
 for (let i = 0; i < projectFooter.length; i++) {
-    projectFooter[i].addEventListener('mouseover', onMouseOverLearnMore)
-    projectFooter[i].addEventListener('mouseout', onMouseOutLearnMore)
+    projectFooter[i].addEventListener('mouseover', onMouseOverProjectFooter)
+    projectFooter[i].addEventListener('mouseout', onMouseOutProjectFooter)
 }
