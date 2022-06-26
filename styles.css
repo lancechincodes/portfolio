@@ -154,7 +154,7 @@ section {
     font-family: 'Bangers', cursive;
     border: 3px solid white;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 50px;
     display: flex;
     justify-content: center;
@@ -240,6 +240,43 @@ section {
     letter-spacing: 3px;
     margin-right: 25px;
 }
+
+#education-rectangle {
+    background: url('images/background-images/education-background.png') no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#skills-rectangle {
+    background: url('images/background-images/skills-background.png') no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#work-experience-rectangle {
+    background: url('images/background-images/work-experience-background.png') no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#certifications-rectangle {
+    background: url('images/background-images/certifications-background.png') no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#leadership-rectangle {
+    background: url('images/background-images/leadership-background.png') no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#honors-and-awards-rectangle {
+    background: url('images/background-images/honors-and-awards-background.png') no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
 
 /*--------------PROJECTS PAGE--------------*/
 #projects-page {
