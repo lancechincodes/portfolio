@@ -1,8 +1,9 @@
 /*--------------CONSTANT VALUES--------------*/
 
-
 /*--------------STATE VALUES--------------*/
-
+// Project state values
+let currentProjectIndex = 0
+let previousProjectIndex = 0
 
 /*--------------CACHED ELEMENT REFERENCES--------------*/
 // Navigation buttons
@@ -22,6 +23,12 @@ const certificationsModal = document.querySelector('#certifications-modal')
 const leadershipModal = document.querySelector('#leadership-modal')
 const honorsAndAwardsModal = document.querySelector('#honors-and-awards-modal')
 const modalCloseButton = document.querySelectorAll('.modal-close-button')
+
+// Projects buttons
+const prevButton = document.querySelector('.prev')
+const nextButton = document.querySelector('.next')
+const project = document.querySelectorAll('.project')
+const projectFooter = document.querySelectorAll('.project-footer')
 
 /*--------------FUNCTIONS--------------*/
 // Navaigation functions
@@ -126,6 +133,53 @@ const closeModal = function() {
     resumeGrid.style.opacity = 1 // fully opaque
 }
 
+// Projects functions
+const onMouseOverPrevCarousel = function(e) {
+    e.target.setAttribute('src', 'images/arrow-buttons/prev-button-alt.png')
+}
+
+const onMouseOutPrevCarousel = function(e) {
+    e.target.setAttribute('src', 'images/arrow-buttons/prev-button.png')
+}
+
+const onMouseOverNextCarousel = function(e) {
+    e.target.setAttribute('src', 'images/arrow-buttons/next-button-alt.png')
+}
+
+const onMouseOutNextCarousel = function(e) {
+    e.target.setAttribute('src', 'images/arrow-buttons/next-button.png')
+}
+
+const onClickPrevCarousel = function() {
+    previousProjectIndex = currentProjectIndex
+    currentProjectIndex--
+    project[previousProjectIndex].style.display = 'none'
+    if (currentProjectIndex < 0) {
+        currentProjectIndex = project.length - 1
+    }
+    project[currentProjectIndex].style.display = 'block'
+}
+
+const onClickNextCarousel = function() {
+    previousProjectIndex = currentProjectIndex
+    currentProjectIndex++
+    project[previousProjectIndex].style.display = 'none'
+    if (currentProjectIndex >= project.length) {
+        currentProjectIndex = 0
+    }
+    project[currentProjectIndex].style.display = 'block'
+}
+
+const onMouseOverLearnMore = function(e) {
+    e.target.style.background = 'white'
+    e.target.style.color = 'black'
+}
+
+const onMouseOutLearnMore = function(e) {
+    e.target.style.background = 'black'
+    e.target.style.color = 'white'
+}
+
 /*--------------EVENT LISTENERS--------------*/
 // Navigation event listeners
 navIconsDiv.addEventListener('mouseover', onMouseOverNavIcons)
@@ -137,10 +191,19 @@ navWordsDiv.addEventListener('mouseout', onMouseOutNavWords)
 resumeGrid.addEventListener('mouseover', onMouseOverResume)
 resumeGrid.addEventListener('mouseout', onMouseOutResume)
 resumeGrid.addEventListener('click', onClickResume)
-
-// add event listeners to ALL modal buttons
+// Add event listeners to all modal buttons
 for (let i = 0; i < modalCloseButton.length; i++) {
     modalCloseButton[i].addEventListener('click', closeModal)
 }
 
-
+// Projects event listeners 
+prevButton.addEventListener('mouseover', onMouseOverPrevCarousel)
+prevButton.addEventListener('mouseout', onMouseOutPrevCarousel)
+nextButton.addEventListener('mouseover', onMouseOverNextCarousel)
+nextButton.addEventListener('mouseout', onMouseOutNextCarousel)
+prevButton.addEventListener('click', onClickPrevCarousel)
+nextButton.addEventListener('click', onClickNextCarousel)
+for (let i = 0; i < projectFooter.length; i++) {
+    projectFooter[i].addEventListener('mouseover', onMouseOverLearnMore)
+    projectFooter[i].addEventListener('mouseout', onMouseOutLearnMore)
+}

@@ -281,8 +281,123 @@ section {
 /*--------------PROJECTS PAGE--------------*/
 #projects-page {
     display: flex;
+    justify-content: center;
     align-content: center;
     background: rgb(15, 15, 15);
 }
+
+.button-div {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15.5vh;    
+}
+
+.carousel-button {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+#projects-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 60vw;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 15.5vh;
+    border: 3px solid white;
+    border-radius: 30px;
+    background: black;
+}
+
+.project {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.project:first-of-type {
+    display: block;
+}
+
+.project h2 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Bangers', cursive;   
+    margin: 20px 20px 0 20px;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.project-description {
+    margin: 0 20px;
+}
+
+.project-subheading {
+    display: flex;
+    align-items: center;
+}
+
+.project-symbol {
+    width: 75px;
+    height: 75px;
+}
+
+.project-description h3 {
+    font-family: 'Bangers', cursive;   
+    font-size: 30px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.project-description p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0px;;
+}
+
+.learn-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: white
+}
+
+.project-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17vw;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.project-footer p {
+    font-family: 'Bangers', cursive;   
+    font-size: 25px;
+    margin: 5px;
+    margin-right: 15px;
+}
+
+#youtube-button {
+    width: 30px;
+    height: auto;
+}
+
 
 /*--------------INTERESTS PAGE--------------*/
