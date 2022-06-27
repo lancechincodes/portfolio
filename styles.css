@@ -63,6 +63,22 @@ section {
     align-items: center;
 }
 
+#greeting-message {
+    animation-name: greetingMessageFadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+@keyframes greetingMessageFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 #greeting-message h1 {
     font-family: 'Bangers', cursive;
     font-size: 120px;
@@ -816,4 +832,7 @@ section {
         width: 45vw;
         height: 5vh;
     }
+
+
+
 }
