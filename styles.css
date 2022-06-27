@@ -832,7 +832,49 @@ section {
         width: 45vw;
         height: 5vh;
     }
+    
+    /*--------------INTERESTS PAGE--------------*/
+    .interest {
+        width: 150px;
+        height: 150px;
+    }
 
+    #playing-sports {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 25px;
+    }
 
+    #designing-graphics {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 25px;
+    }
 
+    #watching-movies {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 25px;
+    }
+
+    #volunteering {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 25px;
+    }
+
+    #interest-heading {
+        width: 200px; 
+        height: 200px;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .hide-interest-description {
+        display: none;
+    }
 }
