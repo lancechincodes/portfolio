@@ -780,5 +780,40 @@ section {
         font-size: 14px;
     }
 
+    .button-div {
+        width: 10vw;
+    }
 
+    .carousel-button {
+        width: 30px;
+        height: auto;
+    }
+
+    #projects-carousel {
+        margin-left: 0;
+        margin-right: 0;
+        width: 75vw;
+    }
+
+    .project h2 {
+        font-size: 30px;
+    }
+
+    .project-symbol {
+        width: 45px;
+        height: auto;
+    }
+
+    .project-subheading h3 {
+        font-size: 20px;
+    }
+
+    .project-description p {
+        font-size: 14.5px;
+    }
+
+    .project-footer { 
+        width: 45vw;
+        height: 5vh;
+    }
 }
