@@ -449,13 +449,24 @@ section {
     font-size: 27px;
 }
 
+#playing-sports:hover {
+    color: transparent;
+    background: url('images/lance-pictures/lance-basketball.png') no-repeat;
+    background-size: cover;
+}
 
-#collecting-cards {
+#designing-graphics {
     position: relative;
     top: 100px;
     right: -100px;
-    font-size: 28px;
+    font-size: 30px;
+}
 
+#designing-graphics:hover {
+    color: transparent;
+    background: url('images/logos/lc-logo-background.png');
+    background-size: cover;
+    background-position: center;
 }
 
 #watching-movies {
@@ -463,16 +474,27 @@ section {
     top: -100px;
     right: 100px;
     font-size: 25px;
-
 }
 
-#playing-board-games {
+#watching-movies:hover {
+    color: transparent;
+    background: url('images/background-images/hp-trio-background.png') no-repeat;
+    background-size: cover;
+}
+
+#volunteering {
     position: relative;
     top: -100px;
     right: -100px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
+#volunteering:hover {
+    color: transparent;
+    background: url('images/background-images/volunteering-background.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 #interest-heading {
     border: 3px solid white;
@@ -481,6 +503,7 @@ section {
     height: 270px;
     text-align: center;
     font-size: 30px;
+    letter-spacing: 1.2px;
     display: flex;
     align-items: center;
 }
