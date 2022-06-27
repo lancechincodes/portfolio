@@ -921,3 +921,196 @@ section {
     .hide-interest-description {
         display: none;
     }
+}
+
+/*----------------------------MEDIUM DEVICES (Tablets)----------------------------*/
+@media screen and (max-width: 770px) {
+
+    /*--------------NAVIGATION BAR--------------*/
+    #nav-words-div {
+        justify-content: start;
+    }
+
+    /*--------------HOME PAGE--------------*/
+
+    /*--------------ABOUT PAGE--------------*/
+    #about-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-me-portrait {
+        margin-top: 13vh;
+    }
+
+    #about-me-portrait #portrait {
+        width: 50vw;
+    }
+
+    #about-me-description {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #about-me-description h1 {
+        margin: 15px;
+        align-self: center;
+        font-size: 50px;
+        text-align: center;
+        width: 100vw;
+    }
+
+    #about-me-description p {
+        font-size: 23px;
+        margin: 0px;
+    }
+
+    /*--------------RESUME PAGE--------------*/
+    #resume-grid {
+        display: grid;
+        height: 400px;
+        grid-template-columns: repeat(2, 320px);
+        grid-template-rows: repeat(3, 150px);
+        margin-top: 30vh; /* counterreact fixed navbar */
+        justify-content: center;
+        align-content: center;
+    }
+
+    .modal {
+        width: 70vw;
+    }
+
+    #education-modal {
+        height: 53vh;
+    }
+
+    #education-modal-text {
+        height: 44vh;
+    }
+
+    #skills-modal {
+        height: 55vh;
+    }
+
+    #skills-modal-text {
+        height: 45vh;
+    }
+
+    #work-experience-modal {
+        height: 50vh;
+    }
+
+    #work-experience-modal-text {
+        height: 41vh;
+    }
+
+    #certifications-modal {
+        height: 50vh;
+    }
+
+    #certifications-modal-text {
+        height: 41vh;
+    }
+
+    #leadership-modal {
+        height: 50vh;
+    }
+
+    #leadership-modal-text {
+        height: 41vh;
+    }
+
+    #honors-and-awards-modal {
+        height: 57vh;
+    }
+
+    #honors-and-awards-modal-text {
+        height: 48vh;
+    }
+    /*--------------PROJECTS PAGE--------------*/
+
+    .project-footer { 
+        width: 33vw;
+        height: 4vh;
+    }
+
+    /*--------------INTERESTS PAGE--------------*/
+    .interest {
+        width: 150px;
+        height: 150px;
+    }
+
+    #playing-sports {
+        position: relative;
+        top: 0px;
+        right: -10px;
+        font-size: 25px;
+    }
+
+    #designing-graphics {
+        position: relative;
+        top: 0px;
+        right: 10px;
+        font-size: 25px;
+    }
+
+    #watching-movies {
+        position: relative;
+        top: 0px;
+        right: -10px;
+        font-size: 25px;
+    }
+
+    #volunteering {
+        position: relative;
+        top: 0px;
+        right: 10px;
+        font-size: 25px;
+    }
+
+    #interest-heading {
+        width: 200px; 
+        height: 200px;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .hide-interest-description {
+        visibility: hidden;
+    }
+
+    #interest-description-grid-left {
+        display: grid;
+        grid-template-columns: repeat(1, 250px);
+        grid-template-rows: repeat(2, 670px);
+        align-items: flex-start;
+        margin: 0px 0px;
+        height: 90vh;
+        position: relative;
+        top: 120px;
+        right: -140px;
+
+    }
+    
+    #interest-description-grid-right {
+        display: grid;
+        grid-template-columns: repeat(1, 250px);
+        grid-template-rows: repeat(2, 690px);
+        align-items: center;
+        margin: 0px 0px;
+        height: 90vh;
+        position: relative;
+        top: -185px;
+        right: 120px;
+    }
+    
+    .interest-description {
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        padding: 3px;
+    }
+}
