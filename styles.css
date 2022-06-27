@@ -1,3 +1,5 @@
+/*----------------------------LARGE DEVICES (LAPTOPS/DESKTOPS)----------------------------*/
+
 /*--------------LARGE SECTIONS--------------*/
 body {
     background: black;
@@ -14,6 +16,8 @@ section {
     height: 10vh;
     display: flex;
     border: 3px solid white;
+    border-left: none;
+    border-right: none;
     background: black;
     position: fixed;
     /* To make the nav bar fill the width and start from the */
@@ -272,7 +276,7 @@ section {
     margin: auto 5px;
 }
 
-#work-experience-resume-list {
+.work-experience-resume-list {
     font-size: 17px;
 }
 
@@ -288,7 +292,7 @@ section {
     margin: 5px;
 }
 
-#leadership-resume-list {
+.leadership-resume-list {
     font-size: 16px;
 }
 
@@ -621,4 +625,160 @@ section {
 
 .hide-interest-description {
     visibility: hidden;
+}
+
+/*----------------------------EXTRA SMALL DEVICES (PHONES)----------------------------*/
+@media screen and (max-width: 480px) {
+    /*--------------NAVIGATION BAR--------------*/
+    #nav-bar {
+        width: 100vw;
+        border-left: none;
+        border-right: none;
+    }
+
+    #nav-icons-div {
+        padding: 5px;
+    }
+       
+    #nav-icons-div .logo {
+        width: 45px;
+    }
+    
+    #nav-words-div {
+        justify-content: start;
+        padding: 5px;
+        margin-left: 10px;
+    }
+    
+    #nav-words-div a {
+        font-size: 18px;  
+        padding: 5px;
+    }
+
+    /*--------------HOME PAGE--------------*/
+    #greeting-message h3 {
+        font-size: 20px;
+    }
+
+    #greeting-message h1 {
+        font-size: 80px;
+    }
+
+    #greeting-message #oval {
+        font-size: 15px;
+    }
+
+    /*--------------ABOUT PAGE--------------*/
+    #about-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-me-portrait {
+        margin-top: 13vh;
+    }
+
+    #about-me-portrait #portrait {
+        width: 50vw;
+    }
+
+    #about-me-description {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #about-me-description h1 {
+        margin: 5px;
+        align-self: center;
+        font-size: 45px;
+        text-align: center;
+        width: 100vw;
+    }
+
+    #about-me-description p {
+        font-size: 18px;
+    }
+    
+    /*--------------RESUME PAGE--------------*/
+    #resume-grid {
+        display: block;
+        margin-top: 15vh
+    }
+
+    .rectangle {
+        height: 103px;
+        width: 80vw;
+    }
+
+    .modal {
+        width: 80vw;
+        height: 70vh;
+    }
+
+    .modal-text {
+        padding: 8px;
+    }
+
+    .modal h1 {
+        font-size: 40px;
+        margin: 5px;
+    }
+
+    .first-item, .second-item {
+        margin: 0;
+    }
+
+    .resume-logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .resume-list {
+        font-size: 17px;
+    }   
+    
+    #skills-grid {
+        /* display: block; */
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(3, 20px);
+        gap: 50px 0px;
+        grid-template-columns: repeat;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .skill {
+        height: 5.5vh;
+        width: 125px;
+        margin: 15px auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .skill-icon {
+        width: 30px;
+    }
+
+    .work-experience-resume-list {
+        font-size: 14px;
+    }
+    
+    .certifications-resume-list {
+        font-size: 14px;
+    }
+
+    .leadership-resume-list {
+        font-size: 13px;
+    }
+
+    .honor {
+        border: white 1.5px solid;
+        border-radius: 30px;
+        font-size: 14px;
+    }
+
+
 }
