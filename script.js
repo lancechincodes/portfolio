@@ -33,6 +33,12 @@ const nextButton = document.querySelector('.next')
 const project = document.querySelectorAll('.project')
 const projectFooter = document.querySelectorAll('.project-footer')
 
+// Interests hover elements
+const interest = document.querySelectorAll('.interest')
+const playingSportsDescription = document.querySelector('#playing-sports-description')
+const watchingMoviesDescription = document.querySelector('#watching-movies-description')
+const designingGraphicsDescription = document.querySelector('#designing-graphics-description')
+const volunteeringDescription = document.querySelector('#volunteering-description')
 
 /*--------------FUNCTIONS--------------*/
 // Navaigation functions
@@ -186,6 +192,29 @@ const onMouseOutProjectFooter = function() {
     }
 }
 
+// Interests functions
+const onMouseOverInterest = function(e) {
+    if (e.target.getAttribute('id') === 'playing-sports' || e.target.getAttribute('id') === 'interest-text-playing-sports') {
+        playingSportsDescription.classList.remove('hide-interest-description')
+    }
+    else if (e.target.getAttribute('id') === 'watching-movies' || e.target.getAttribute('id') === 'interest-text-watching-movies') {
+        watchingMoviesDescription.classList.remove('hide-interest-description')
+    }
+    else if (e.target.getAttribute('id') === 'designing-graphics' || e.target.getAttribute('id') === 'interest-text-designing-graphics') {
+        designingGraphicsDescription.classList.remove('hide-interest-description')
+    }
+    else if (e.target.getAttribute('id') === 'volunteering' || e.target.getAttribute('id') === 'interest-text-volunteering') {
+        volunteeringDescription.classList.remove('hide-interest-description')
+    }
+}
+
+const onMouseOutInterest = function(e) {
+    playingSportsDescription.classList.add('hide-interest-description')
+    watchingMoviesDescription.classList.add('hide-interest-description')
+    designingGraphicsDescription.classList.add('hide-interest-description')
+    volunteeringDescription.classList.add('hide-interest-description')
+}
+
 /*--------------EVENT LISTENERS--------------*/
 // Navigation event listeners
 navIconsDiv.addEventListener('mouseover', onMouseOverNavIcons)
@@ -212,4 +241,10 @@ nextButton.addEventListener('click', onClickNextCarousel)
 for (let i = 0; i < projectFooter.length; i++) {
     projectFooter[i].addEventListener('mouseover', onMouseOverProjectFooter)
     projectFooter[i].addEventListener('mouseout', onMouseOutProjectFooter)
+}
+
+// Interests event listeners 
+for (let i = 0; i < interest.length; i++) {
+    interest[i].addEventListener('mouseover', onMouseOverInterest)
+    interest[i].addEventListener('mouseout', onMouseOutInterest)
 }
