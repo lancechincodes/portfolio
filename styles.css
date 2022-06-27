@@ -149,12 +149,11 @@ section {
     margin-top: 30vh; /* counterreact fixed navbar */
     justify-content: center;
     align-content: center;
-    border: 1.5px solid white;
 }
 
 .rectangle {
     font-family: 'Bangers', cursive;
-    border: 1.5px solid white;
+    border: 2px solid white;
     text-align: center;
     font-size: 40px;
     line-height: 50px;
