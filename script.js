@@ -33,6 +33,7 @@ const nextButton = document.querySelector('.next')
 const project = document.querySelectorAll('.project')
 const projectFooter = document.querySelectorAll('.project-footer')
 
+
 /*--------------FUNCTIONS--------------*/
 // Navaigation functions
 const onMouseOverNavIcons = function(e) {

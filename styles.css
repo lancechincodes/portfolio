@@ -586,3 +586,36 @@ section {
     display: flex;
     align-items: center;
 }
+
+
+#interest-description-grid-left {
+    display: grid;
+    grid-template-columns: repeat(1, 250px);
+    grid-template-rows: repeat(2, 300px);
+    align-items: center;
+    margin: 100px 100px;
+}
+
+#interest-description-grid-right {
+    display: grid;
+    grid-template-columns: repeat(1, 250px);
+    grid-template-rows: repeat(2, 300px);
+    align-items: center;
+    margin: 100px 100px;
+}
+
+.interest-description {
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 3px;
+}
+
+.interest-description p {
+    margin: 10px;
+}
+
+#watching-movies-italic {
+    font-style: italic;
+}
