@@ -416,6 +416,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    margin-top: 100px;
 }
 
 .top-interest, .bottom-interest {
@@ -433,8 +434,8 @@ section {
 .interest {
     border: 3px solid white;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -446,7 +447,7 @@ section {
     position: relative;
     top: 100px;
     right: 100px;
-    font-size: 27px;
+    font-size: 30px;
 }
 
 #playing-sports:hover {
@@ -459,7 +460,7 @@ section {
     position: relative;
     top: 100px;
     right: -100px;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 #designing-graphics:hover {
@@ -499,8 +500,8 @@ section {
 #interest-heading {
     border: 3px solid white;
     border-radius: 50%;
-    width: 270px;
-    height: 270px;
+    width: 280px;
+    height: 280px;
     text-align: center;
     font-size: 30px;
     letter-spacing: 1.2px;
