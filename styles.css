@@ -143,16 +143,18 @@ section {
 
 #resume-grid {
     display: grid;
+    height: 400px;
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(2, 200px);
-    margin-top: 10vh; /* counterreact fixed navbar */
+    margin-top: 30vh; /* counterreact fixed navbar */
     justify-content: center;
     align-content: center;
+    border: 1.5px solid white;
 }
 
 .rectangle {
     font-family: 'Bangers', cursive;
-    border: 3px solid white;
+    border: 1.5px solid white;
     text-align: center;
     font-size: 40px;
     line-height: 50px;
@@ -178,6 +180,7 @@ section {
     width: 40vw;
     background-color: black;
     border: 3px solid white;
+    border-radius: 5%;
     z-index: 1;   
     left: 0;
     right: 0;
@@ -262,7 +265,6 @@ section {
     height: auto;
     border-radius: 30px;
     background-color: rgb(15, 15, 15);
-
 }
 
 .skill-icon {
@@ -433,15 +435,16 @@ section {
 
 .project-description p {
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
+    line-height: 1.2;
     margin: 0px;;
 }
 
 .learn-more {
     display: flex;
     justify-content: flex-end;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 5px;
 }
 
@@ -477,9 +480,6 @@ section {
     width: 35px;
     height: auto;
 }
-
-
-
 
 /*--------------INTERESTS PAGE--------------*/
 #interests-page {
