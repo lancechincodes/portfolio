@@ -469,10 +469,16 @@ section {
     margin-right: 15px;
 }
 
-.project-footer-button {
+.project-footer-button.youtube {
     width: 30px;
     height: auto;
 }
+.project-footer-button.github {
+    width: 35px;
+    height: auto;
+}
+
+
 
 
 /*--------------INTERESTS PAGE--------------*/
