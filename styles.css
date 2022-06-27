@@ -241,6 +241,39 @@ section {
     margin-right: 25px;
 }
 
+#skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(3, 20px);
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    gap: 100px 30px;
+    margin: 20px 0;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: white 3px solid;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    background-color: rgb(15, 15, 15);
+
+}
+
+.skill p {
+    font-size: 25px;
+}
+
+.skill-icon {
+    /* object-fit: cover; */
+    width: 50px;
+    height: auto;
+    margin: auto 5px;
+}
+
 #education-rectangle {
     background: url('images/background-images/education-background.png') no-repeat;
     background-position: center;
