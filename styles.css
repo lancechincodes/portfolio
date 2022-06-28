@@ -8,12 +8,12 @@ body {
 }
 
 section {
-    height: 100vh;
+    height: 800px;
 }
 
 /*--------------NAVIGATION BAR--------------*/
 #nav-bar {
-    height: 10vh;
+    height: 70px;
     display: flex;
     border: 3px solid white;
     border-left: none;
@@ -28,7 +28,7 @@ section {
 }
 
 #nav-icons-div {
-    width: 30vw;
+    /* width: 30px; */
     padding: 10px;
     display: flex;
     align-items: center;
@@ -36,7 +36,7 @@ section {
 }
 
 #nav-icons-div .logo {
-    width: 65px;
+    width: 50px;
     height: auto;
 }
 
@@ -81,14 +81,14 @@ section {
 
 #greeting-message h1 {
     font-family: 'Bangers', cursive;
-    font-size: 120px;
+    font-size: 150px;
     margin: 0;
 }
 
 #greeting-message h3 {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 300;
 }
 
@@ -113,28 +113,28 @@ section {
 }
 
 #about-me-portrait {
-    width: 45vw;
+    width: 600px;
     display: flex;
     justify-content: center;
     align-content: center;
     align-self: center;
-    margin-top: 10vh; /* counterreact fixed navbar */
+    margin-top: 70px; /* counterreact fixed navbar */
 }
 
 #about-me-portrait #portrait {
-    width: 450px;
+    width: 400px;
     height: auto;
     border: 3px solid white;
     border-radius: 50%;
 }
 
 #about-me-description {
-    width: 55vw;
+    width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-top: 10vh; /* counterreact fixed navbar */
+    margin-top: 70px; /* counterreact fixed navbar */
 }
 
 #about-me-description h1 {
@@ -150,7 +150,6 @@ section {
     font-size: 25px;
     line-height: 1.8;
     width: 90%;
-
 }
 
 /*--------------RESUME PAGE--------------*/
@@ -166,7 +165,7 @@ section {
     height: 400px;
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(2, 200px);
-    margin-top: 30vh; /* counterreact fixed navbar */
+    margin-top: 225px; /* counterreact fixed navbar */
     justify-content: center;
     align-content: center;
 }
@@ -195,8 +194,8 @@ section {
 .modal {
     display: none;
     position: absolute;
-    height: 73vh;
-    width: 40vw;
+    height: 550px;
+    width: 500px;
     background-color: black;
     border: 3px solid white;
     border-radius: 5%;
@@ -204,12 +203,12 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 10vh; /* Top counterreacts fixed navbar */
+    top: 70px;
     margin: auto; 
 }
 
 .modal-text {
-    height: 60vh;
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -220,7 +219,7 @@ section {
 
 .modal-text h1 {
     font-family: 'Bangers', cursive;   
-    font-size: 65px; 
+    font-size: 55px; 
     text-align: center;
     margin: 0;
 }
@@ -231,14 +230,14 @@ section {
 }
 
 .resume-logo {
-    width: 130px;
-    height: 130px;
+    width: 110px;
+    height: 110px;
     border: 3px solid white;
     align-self: center;
 }
 
 .resume-list {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.5;
     list-style-type: square;
 }
@@ -265,8 +264,8 @@ section {
 
 #skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(3, 20px);
+    grid-template-columns: repeat(2, minmax(70px, 200px));
+    grid-template-rows: repeat(3, minmax(5px, 20px));
     font-family: 'Roboto', sans-serif;
     justify-content: center;
     gap: 100px 30px;
@@ -279,20 +278,16 @@ section {
     justify-content: center;
     margin: auto;
     border: white 3px solid;
-    width: 100%;
+    width: 185px;
     height: auto;
     border-radius: 30px;
     background-color: rgb(15, 15, 15);
 }
 
 .skill-icon {
-    width: 50px;
+    width: 35px;
     height: auto;
     margin: auto 5px;
-}
-
-.work-experience-resume-list {
-    font-size: 17px;
 }
 
 #work-experience-first-item, #work-experience-second-item {
@@ -318,7 +313,7 @@ section {
     border: white 3px solid;
     border-radius: 30px;
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
     background: rgb(15, 15, 15);
     color: white;
     font-weight: 700;
@@ -336,37 +331,31 @@ section {
 #education-rectangle {
     background: url('images/background-images/education-background.png') no-repeat;
     background-position: center;
-    background-size: 100%;
 }
 
 #skills-rectangle {
     background: url('images/background-images/skills-background.png') no-repeat;
     background-position: center;
-    background-size: 100%;
 }
 
 #work-experience-rectangle {
     background: url('images/background-images/work-experience-background.png') no-repeat;
     background-position: center;
-    background-size: 100%;
 }
 
 #certifications-rectangle {
     background: url('images/background-images/certifications-background.png') no-repeat;
     background-position: center;
-    background-size: 100%;
 }
 
 #leadership-rectangle {
     background: url('images/background-images/leadership-background.png') no-repeat;
     background-position: center;
-    background-size: 100%;
 }
 
 #honors-and-awards-rectangle {
     background: url('images/background-images/honors-and-awards-background.png') no-repeat;
     background-position: center;
-    background-size: 100%;
 }
 
 /*--------------PROJECTS PAGE--------------*/
@@ -378,16 +367,16 @@ section {
 }
 
 .button-div {
-    height: 80vh;
+    height: 570px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15.5vh;    
+    margin-top: 150px;    
 }
 
 .carousel-button {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
 }
 
@@ -395,11 +384,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 570px;
     width: 60vw;
     margin-right: 30px;
     margin-left: 30px;
-    margin-top: 15.5vh;
+    margin-top: 150px;
     border: 3px solid white;
     border-radius: 30px;
     background: black;
@@ -407,8 +396,6 @@ section {
 
 .project {
     display: none;
-    width: 100%;
-    height: 100%;
 }
 
 .project:first-of-type {
@@ -417,7 +404,7 @@ section {
 
 .project h2 {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Bangers', cursive;   
     margin: 20px 20px 0 20px;
 }
@@ -439,8 +426,8 @@ section {
 }
 
 .project-symbol {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
 }
 
 .project-description h3 {
@@ -474,7 +461,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 17vw;
 }
 
 .project-footer-hover-effect {
@@ -484,17 +470,17 @@ section {
 
 .project-footer p {
     font-family: 'Bangers', cursive;   
-    font-size: 25px;
+    font-size: calc(8px + vw);
     margin: 5px;
     margin-right: 15px;
 }
 
 .project-footer-button.youtube {
-    width: 30px;
+    width: 23px;
     height: auto;
 }
 .project-footer-button.github {
-    width: 35px;
+    width: 22px;
     height: auto;
 }
 
@@ -641,7 +627,7 @@ section {
     visibility: hidden;
 }
 
-/*----------------------------EXTRA SMALL DEVICES (PHONES)----------------------------*/
+/*----------------------------EXTRA SMALL DEVICES (SMALL PHONES)----------------------------*/
 @media screen and (max-width: 480px) {
     /*--------------NAVIGATION BAR--------------*/
     #nav-bar {
@@ -670,7 +656,7 @@ section {
     }
 
     /*--------------HOME PAGE--------------*/
-    #greeting-message h3 {
+    /* #greeting-message h3 {
         font-size: 20px;
     }
 
@@ -680,7 +666,7 @@ section {
 
     #greeting-message #oval {
         font-size: 15px;
-    }
+    } */
 
     /*--------------ABOUT PAGE--------------*/
     #about-page {
@@ -706,15 +692,10 @@ section {
     #about-me-description h1 {
         margin: 5px;
         align-self: center;
-        font-size: 45px;
         text-align: center;
         width: 100vw;
     }
-
-    #about-me-description p {
-        font-size: 18px;
-    }
-    
+   
     /*--------------RESUME PAGE--------------*/
     #resume-grid {
         display: block;
@@ -924,7 +905,7 @@ section {
 }
 
 /*----------------------------MEDIUM DEVICES (Tablets)----------------------------*/
-@media screen and (max-width: 770px) {
+@media screen and (min-width: 481px) and (max-width: 770px) {
 
     /*--------------NAVIGATION BAR--------------*/
     #nav-words-div {
@@ -957,13 +938,11 @@ section {
     #about-me-description h1 {
         margin: 15px;
         align-self: center;
-        font-size: 50px;
         text-align: center;
         width: 100vw;
     }
 
     #about-me-description p {
-        font-size: 23px;
         margin: 0px;
     }
 
@@ -1036,6 +1015,11 @@ section {
         height: 4vh;
     }
 
+
+    #projects-carousel {
+        width: 75vw;
+        height: 55vh;
+    }
     /*--------------INTERESTS PAGE--------------*/
     .interest {
         width: 150px;
@@ -1078,39 +1062,6 @@ section {
     }
 
     .hide-interest-description {
-        visibility: hidden;
-    }
-
-    #interest-description-grid-left {
-        display: grid;
-        grid-template-columns: repeat(1, 250px);
-        grid-template-rows: repeat(2, 670px);
-        align-items: flex-start;
-        margin: 0px 0px;
-        height: 90vh;
-        position: relative;
-        top: 120px;
-        right: -140px;
-
-    }
-    
-    #interest-description-grid-right {
-        display: grid;
-        grid-template-columns: repeat(1, 250px);
-        grid-template-rows: repeat(2, 690px);
-        align-items: center;
-        margin: 0px 0px;
-        height: 90vh;
-        position: relative;
-        top: -185px;
-        right: 120px;
-    }
-    
-    .interest-description {
-        border: 2px solid white;
-        border-radius: 10px;
-        font-size: 14px;
-        font-family: 'Roboto', sans-serif;
-        padding: 3px;
+        display: none;
     }
 }
