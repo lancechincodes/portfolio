@@ -1,9 +1,9 @@
 /*----------------------------LARGE DEVICES (LAPTOPS/DESKTOPS)----------------------------*/
 
 /*--------------LARGE SECTIONS--------------*/
-html, body {
+html {
     overflow-x: hidden; /* remove horizontal scroll effect */
-  }
+}
 
 body {
     background: black;
