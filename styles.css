@@ -628,29 +628,32 @@ section {
 }
 
 /*----------------------------EXTRA SMALL DEVICES (SMALL PHONES)----------------------------*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 385px) {
     /*--------------NAVIGATION BAR--------------*/
     #nav-bar {
         border-left: none;
         border-right: none;
+        display: flex;
+        width: 100vw;
     }
 
     #nav-icons-div {
         padding: 5px;
+        float: left;
     }
        
     #nav-icons-div .logo {
-        width: 45px;
+        width: 50px;
     }
     
     #nav-words-div {
-        justify-content: flex-start;
-        padding: 5px;
-        margin-left: 10px;
+        display: flex;
+        float: right;
+        padding: 4px;
     }
     
     #nav-words-div a {
-        font-size: 17px;  
+        font-size: 12px;  
         padding: 5px;
     }
 
@@ -694,15 +697,14 @@ section {
         align-self: center;
         text-align: center;
         width: 350px;
-        font-size: 50px;
+        font-size: 40px;
     }
 
     #about-me-description p {
         margin: 5px;
         align-self: center;
-        text-align: center;
-        width: 350px;
-        font-size: 16px;
+        width: 80vw;
+        font-size: 15px;
     }
    
     /*--------------RESUME PAGE--------------*/
@@ -918,15 +920,18 @@ section {
 }
 
 /*----------------------------SMALL DEVICES (PHONES)----------------------------*/
-@media screen and (min-width: 376px) and (max-width: 512px) {
+@media screen and (min-width: 386px) and (max-width: 512px) {
     /*--------------NAVIGATION BAR--------------*/
     #nav-bar {
         border-left: none;
         border-right: none;
+        display: flex;
+        width: 100vw;
     }
 
     #nav-icons-div {
         padding: 7px;
+        float: left;
     }
        
     #nav-icons-div .logo {
@@ -934,13 +939,13 @@ section {
     }
     
     #nav-words-div {
-        justify-content: flex-start;
+        display: flex;
+        float: right;
         padding: 5px;
-        margin-left: 10px;
     }
     
     #nav-words-div a {
-        font-size: 18px;  
+        font-size: 16.5px;  
         padding: 5px;
     }
 
@@ -1209,7 +1214,7 @@ section {
 }
 
 /*----------------------------MEDIUM DEVICES (Tablets)----------------------------*/
-@media screen and (min-width: 481px) and (max-width: 770px) {
+@media screen and (min-width: 513px) and (max-width: 768px) {
 
     /*--------------NAVIGATION BAR--------------*/
     #nav-words-div {
