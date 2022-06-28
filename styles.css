@@ -114,6 +114,7 @@ section {
 #about-page {
     display: flex;
     align-content: center;
+    justify-content: center;
     background: rgb(15, 15, 15);
 }
 
