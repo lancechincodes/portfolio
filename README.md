@@ -1,6 +1,6 @@
 # Portfolio Website 💻
 
-Hey there 👋, my name is Lance Chin and I'm proud to present my personal portfolio!
+Hey there, my name is Lance Chin and I'm proud to present my personal portfolio!
 
 ## Check It Out 💡 
 - [Lance Chin's Portfolio](https://lancechincodes.github.io/portfolio/) 
