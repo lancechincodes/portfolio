@@ -1672,3 +1672,233 @@ section {
         display: none;
     }
 }
+
+/*----------------------------MEDIUM PLUS PLUS DEVICES (Small macbook)----------------------------*/
+@media screen and (min-width: 961px) and (max-width: 1280px) {
+
+    /*--------------NAVIGATION BAR--------------*/
+    #nav-bar {
+        border-left: none;
+        border-right: none;
+        display: flex;
+        width: 100vw;
+    }
+
+    #nav-icons-div {
+        padding: 7px;
+        float: left;
+    }
+       
+    #nav-icons-div .logo {
+        width: 60px;
+    }
+    
+    #nav-words-div {
+        display: flex;
+        float: right;
+        padding: 5px;
+    }
+    
+    #nav-words-div a {
+        font-size: 26px;  
+        padding: 20px;
+    }
+
+    /*--------------HOME PAGE--------------*/
+    #greeting-message h3 {
+        font-size: 30px;
+    }
+
+    #greeting-message h1 {
+        font-size: 135px;
+    }
+
+    #greeting-message #oval {
+        font-size: 20px;
+    }
+
+    /*--------------ABOUT PAGE--------------*/
+    #about-page {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #about-me-portrait {
+        margin-top: 80px;
+    }
+
+    #about-me-portrait #portrait {
+        width: 330px;
+    }
+
+    #about-me-description {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    #about-me-description h1 {
+        margin: 5px;
+        align-self: center;
+        text-align: center;
+        width: 350px;
+        font-size: 53px;
+    }
+
+    #about-me-description p {
+        margin: 5px;
+        align-self: center;
+        width: 750px;
+        font-size: 22px;
+    }
+
+    /*--------------RESUME PAGE--------------*/
+    #resume-grid {
+        display: grid;
+        height: 400px;
+        grid-template-columns: repeat(2, 370px);
+        grid-template-rows: repeat(3, 200px);
+        margin-top: 200px; /* counterreact fixed navbar */
+        justify-content: center;
+        align-content: center;
+    }
+
+    .modal {
+        width: 550px;
+    }
+
+    #education-modal {
+        height: 500px;
+    }
+
+    #education-modal-text {
+        height: 400px;
+    }
+
+    #skills-modal {
+        height: 510px;
+    }
+
+    #skills-modal-text {
+        height: 415px;
+    }
+
+    #work-experience-modal {
+        height: 510px;
+    }
+
+    #work-experience-modal-text {
+        height: 420px;
+    }
+
+    #certifications-modal {
+        height: 500px;
+    }
+
+    #certifications-modal-text {
+        height: 400px;
+    }
+
+    #leadership-modal {
+        height: 510px;
+    }
+
+    #leadership-modal-text {
+        height: 420px;
+    }
+
+    #honors-and-awards-modal {
+        height: 520px;
+    }
+
+    #honors-and-awards-modal-text {
+        height: 435px;
+    }
+    /*--------------PROJECTS PAGE--------------*/
+    .button-div {
+        width: 50px;
+        margin-top: 150px;
+    }
+
+    .carousel-button {
+        width: 40px;
+        height: auto;
+    }
+
+    #projects-carousel {
+        margin-left: 0;
+        margin-right: 0;
+        width: 650px;
+        height: 600px;
+        margin-top: 100px;
+    }
+
+    .project h2 {
+        font-size: 53px;
+    }
+
+    .project-symbol {
+        width: 55px;
+        height: auto;
+    }
+
+    .project-subheading h3 {
+        font-size: 27px;
+    }
+
+    .project-description p {
+        font-size: 20px;
+    }
+
+    .project-footer { 
+        width: 200px;
+        height: 28px;
+    }
+    /*--------------INTERESTS PAGE--------------*/
+    .interest {
+        width: 180px;
+        height: 180px;
+    }
+
+    #playing-sports {
+        position: relative;
+        top: 50px;
+        right: 50px;
+        font-size: 25px;
+    }
+
+    #designing-graphics {
+        position: relative;
+        top: 50px;
+        right: -50px;
+        font-size: 25px;
+    }
+
+    #watching-movies {
+        position: relative;
+        top: -50px;
+        right: 50px;
+        font-size: 25px;
+    }
+
+    #volunteering {
+        position: relative;
+        top: -50px;
+        right: -50px;
+        font-size: 25px;
+    }
+
+    #interest-heading {
+        width: 260px; 
+        height: 260px;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .interest-description {
+        display: none;
+    }
+}
