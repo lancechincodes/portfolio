@@ -2,7 +2,7 @@
 
 /*--------------LARGE SECTIONS--------------*/
 html, body {
-    overflow-x: hidden;
+    overflow-x: hidden; /* remove horizontal scroll effect */
   }
 
 body {
@@ -25,7 +25,6 @@ section {
     border-right: none;
     background: black;
     position: fixed;
-    /* To make the nav bar fill the width and start from the */
     top: 0;
     right: 0;
     left: 0;
