@@ -842,7 +842,9 @@ section {
     /*--------------PROJECTS PAGE--------------*/
     .button-div {
         width: 50px;
-        margin-top: 12vh;
+        margin-top: 100px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .carousel-button {
@@ -858,7 +860,7 @@ section {
     }
 
     .project h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .project-symbol {
@@ -867,56 +869,56 @@ section {
     }
 
     .project-subheading h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .project-description p {
-        font-size: 13px;
+        font-size: 12.2px;
     }
 
     .project-footer { 
-        width: 45vw;
-        height: 5vh;
+        width: 150px;
+        height: 10px;
     }
 
     /*--------------INTERESTS PAGE--------------*/
     .interest {
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
     }
 
     #playing-sports {
         position: relative;
         top: 0px;
         right: -10px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #designing-graphics {
         position: relative;
         top: 0px;
         right: 10px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #watching-movies {
         position: relative;
         top: 0px;
         right: -10px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #volunteering {
         position: relative;
         top: 0px;
         right: 10px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #interest-heading {
-        width: 200px; 
-        height: 200px;
-        font-size: 25px;
+        width: 180px; 
+        height: 180px;
+        font-size: 22px;
         position: relative;
     }
 
@@ -951,21 +953,21 @@ section {
     }
     
     #nav-words-div a {
-        font-size: 16.5px;  
+        font-size: 16px;  
         padding: 5px;
     }
 
     /*--------------HOME PAGE--------------*/
     #greeting-message h3 {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     #greeting-message h1 {
-        font-size: 90px;
+        font-size: 85px;
     }
 
     #greeting-message #oval {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     /*--------------ABOUT PAGE--------------*/
@@ -1136,6 +1138,8 @@ section {
     .button-div {
         width: 50px;
         margin-top: 150px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .carousel-button {
@@ -1147,12 +1151,12 @@ section {
         margin-left: 0;
         margin-right: 0;
         width: 300px;
-        height: 600px;
+        height: 620px;
         margin-top: 100px;
     }
 
     .project h2 {
-        font-size: 35px;
+        font-size: 32px;
     }
 
     .project-symbol {
@@ -1161,11 +1165,11 @@ section {
     }
 
     .project-subheading h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .project-description p {
-        font-size: 15px;
+        font-size: 14.5px;
     }
 
     .project-footer { 
