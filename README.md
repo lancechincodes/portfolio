@@ -1,8 +1,9 @@
-# Portfolio Site 💻
+# Portfolio Website 💻
 
 Hey there 👋, my name is Lance Chin and I'm proud to present my personal portfolio!
 
-- Check out the live site: [Lance Chin's Portfolio](https://lancechincodes.github.io/portfolio/) 💡
+## Check It Out 💡 
+- [Lance Chin's Portfolio](https://lancechincodes.github.io/portfolio/) 
 
 ## Application Screenshots 📸
 ![Home Page](/screenshots/home-page.png)
@@ -14,7 +15,7 @@ Hey there 👋, my name is Lance Chin and I'm proud to present my personal portf
 ![Interests Page Hover](/screenshots/interests-page-hover.png)
 
 ## Technology and Tools 🛠
-<p align="left"> <a  target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript Icon" width="40" height="40"/></a> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3 Icon" width="40" height="40"/> </a> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML" > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5 Icon" width="40" height="40"/> </a> </p>
+<p align="left"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript Icon" width="40" height="40"/></a> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3 Icon" width="40" height="40"/> </a> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML" > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5 Icon" width="40" height="40"/></a></p>
 
 ## Installation Instructions 📲
 To view and suggest edits to this project locally:
@@ -48,10 +49,12 @@ As a recruiter, I want to:
 
 
 ## Challenges 💪
-Manipulating flexbox and using media queries were major hurdles I had to manuever. However, after persistence and trial and error, I am much more confident in my abilities with both and am proud of the vision that I brought to life. 
+Manipulating flexbox and media queries were difficult challenges yet so important to my growth as a developer. As simple as centering divs sound, I struggled with placing elements on the page where I intended them to be. However, after great persistence and trial and error, I am much more confident in both positioning elements correctly and adjusting them in mobile, tablet, laptop, and monitor perspectives.
 
+## What's Next 🏁
+Although the first version is complete, the marathon continues and so does my portfolio. For future improvements, I will implement more interactions on the homepage, a section for demoing deployed projects, and an "Our Innovative World" blog that scopes out the latest and greatest technology. 
 ## Reflection 🙌
-I thoroughly enjoyed building this project! While it certainly wasn't easy, it helped me reinforce the relationship between CSS, HTML, and JavaScript to create interactive and responsive webpages. I hope you enjoy the finished product and thanks again for checking it out!
+I thoroughly enjoyed building this project! While not easy, it served as an amazing instructor – teaching me how CSS, HTML, and JavaScript are used collaboratively to create interactive and responsive webpages, the importance of git version control, and to approach challenges with an optimstic mindset. I hope you enjoyed my portfolio and feel free to leave me feedback!
 
 ## Connect With Me 👥
 <p align="left">
