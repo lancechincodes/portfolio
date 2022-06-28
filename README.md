@@ -2,7 +2,7 @@
 
 Hey there 👋, my name is Lance Chin and I'm proud to present my personal portfolio!
 
-- Check out the live site: [Lance Chin's Portfolio]() 💡
+- Check out the live site: [Lance Chin's Portfolio](https://lancechincodes.github.io/portfolio/) 💡
 
 ## Application Screenshots 📸
 ![Home Page](/screenshots/home-page.png)

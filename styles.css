@@ -1,10 +1,15 @@
 /*----------------------------LARGE DEVICES (LAPTOPS/DESKTOPS)----------------------------*/
 
 /*--------------LARGE SECTIONS--------------*/
+html, body {
+    overflow-x: hidden;
+  }
+
 body {
     background: black;
     color: white;
     margin: 0;
+    position: relative;
 }
 
 section {
@@ -1003,11 +1008,11 @@ section {
     /*--------------RESUME PAGE--------------*/
     #resume-grid {
         display: block;
-        margin-top: 80px;
+        margin-top: 20px;
     }
 
     .rectangle {
-        height: 103px;
+        height: 120px;
         width: 300px;
     }
 
@@ -1095,11 +1100,11 @@ section {
     }
 
     #work-experience-modal {
-        height: 460px;
+        height: 485px;
     }
 
     #work-experience-modal-text {
-        height: 400px;
+        height: 415px;
     }
 
     #certifications-modal {
@@ -1177,34 +1182,34 @@ section {
         position: relative;
         top: 0px;
         right: -10px;
-        font-size: 25px;
+        font-size: 23px;
     }
 
     #designing-graphics {
         position: relative;
         top: 0px;
         right: 10px;
-        font-size: 25px;
+        font-size: 23px;
     }
 
     #watching-movies {
         position: relative;
         top: 0px;
         right: -10px;
-        font-size: 25px;
+        font-size: 23px;
     }
 
     #volunteering {
         position: relative;
         top: 0px;
         right: 10px;
-        font-size: 25px;
+        font-size: 23px;
     }
 
     #interest-heading {
         width: 200px; 
         height: 200px;
-        font-size: 25px;
+        font-size: 23px;
         position: relative;
     }
 
