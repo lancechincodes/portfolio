@@ -1,6 +1,3 @@
-// NOTE: Discovered "hover" applying 'mouseover' and 'mouseout' event listeners 
-// So navigation bar, resume page, and projects page operate on the latter while interests page operates on the former
-
 /*--------------CONSTANT VALUES--------------*/
 
 /*--------------STATE VALUES--------------*/
