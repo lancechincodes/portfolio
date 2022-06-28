@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Lance Chin</title>
+</head>
+<body>
+    <nav id="nav-bar" role="navigation" aria="Navigation">
+        <div id="nav-icons-div">
+            <a href="#home-page">
+                <img class="logo" id="home-button" src="images/logos/lc-logo.png" alt="Lance Chin Logo and Home Button">
+            </a>
+            <a href="https://github.com/lancechincodes" target="_blank">
+                <img class="logo" id="github-button" src="images/logos/github-logo.png" alt="Github Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/lance-chin/" target="_blank">
+                <img class="logo" id="linkedin-button" src="images/logos/linkedin-logo.png" alt="LinkedIn Icon">
+            </a>
+        </div>
+        <div id="nav-words-div">
+            <a id="about-button" href="#about-page">About</a>
+            <a id="resume-button" href="#resume-page">Resume</a>
+            <a id="projects-button" href="#projects-page">Projects</a>
+            <a id="interests-button" href="#interests-page">Interests</a>
+        </div>
+    </nav>
+    <main>
+        <section id="home-page">
+            <div id="greeting-message">
+                <h3>PRESENTING</h3>
+                <h1>Lance Chin</h1>
+                <div id="oval">SOFTWARE ENGINEER</div>
+            </div>
+        </section>
+        <section id="about-page">
+            <div id="about-me-portrait">
+                <img id="portrait" src="images/lance-pictures/lance-portrait.png" alt="Lance Chin Portrait">
+            </div>
+            <article id="about-me-description">
+                <h1>Nice to meet you!</h1>
+                <p>
+                    Currently I am attending General Assembly's Software Engineering Immersive 
+                    program where I am fueling my curiosity to learn and apply the latest technologies.
+                    With a background in mechanical engineering and as the former president of the 
+                    Society of Asian Scientists and Engineers at the University of Houston, my mission has and always
+                    will be to make my community a brighter place. I hope my goals resonate with you, and thanks
+                    for stopping by!
+                </p>
+            </article>
+        </section>
+        <section id="resume-page">
+            <div id="resume-grid">
+                <div class="rectangle" id="education-rectangle">
+                    <div id="education" class="hover-effect hide-border">Education</div>
+                </div>
+                <div class="rectangle" id="skills-rectangle">
+                    <div id="skills" class="hover-effect hide-border">Skills</div>
+                </div>
+                <div class="rectangle" id="work-experience-rectangle">
+                    <div id="work-experience" class="hover-effect hide-border">Work Experience</div>
+                </div>
+                <div class="rectangle" id="certifications-rectangle">
+                    <div id="certifications" class="hover-effect hide-border">Certifications</div>
+                </div>
+                <div class="rectangle" id="leadership-rectangle">
+                    <div id="leadership" class="hover-effect hide-border">Leadership</div>
+                </div>
+                <div class="rectangle" id="honors-and-awards-rectangle">
+                    <div id="honors-and-awards" class="hover-effect hide-border">Honors & Awards</div>
+                </div>
+            </div>
+
+            <div id="education-modal" class="modal">
+                <div class="modal-text" id="education-modal-text">
+                    <h1>Education</h1>
+                    <div class="first-item">
+                        <img class="resume-logo" src="images/logos/ga-logo.png" alt="General Assembly Logo">
+                        <ul class="resume-list">
+                            <li>General Assembly</li>
+                            <li>Software Engineering Immersive Program</li>
+                            <li>June 2022 - Present</li>
+                        </ul>
+                    </div>
+                    <div class="second-item">
+                        <img class="resume-logo" src="images/logos/uh-logo.jpeg" alt="University of Houston Logo">
+                        <ul class="resume-list">
+                            <li>University of Houston</li>
+                            <li>Major: Mechanical Engineering</li>
+                            <li>Minor: Mathematics</li>
+                            <li>GPA: 3.98</li>
+                            <li>August 2018 - May 2022</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="modal-close-button" href="#resume-page">CLOSE</a>
+                </div>
+            </div>
+
+            <div id="skills-modal" class="modal">
+                <div class="modal-text" id="skills-modal-text">
+                    <h1>Skills</h1>
+                    <div id="skills-grid">
+                        <div id="java" class="skill">
+                            <img class="skill-icon"src="images/skill-icons/java-icon.png" alt="java-icon">
+                            <p>Java</p>
+                        </div>          
+                        <div id="matlab" class="skill">
+                            <img class="skill-icon" src="images/skill-icons/matlab-icon.png" alt="matlab-icon">
+                            <p>MATLAB</p>
+                        </div>
+                        <div id="cplusplus" class="skill">
+                            <img class="skill-icon" src="images/skill-icons/cplusplus-icon.png" alt="skill-icon">
+                            <p>C++</p>
+                        </div>
+                        <div id="html" class="skill">
+                            <img class="skill-icon" src="images/skill-icons/html-icon.png" alt="html-icon">
+                            <p>HTML</p>
+                        </div>
+                        <div id="css" class="skill">
+                            <img class="skill-icon" src="images/skill-icons/css-icon.png" alt="css-icon">
+                            <p>CSS</p>
+                        </div>
+                        <div id="javascript" class="skill">
+                            <img class="skill-icon" src="images/skill-icons/js-icon.png" alt="javascript-icon">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>   
+                </div>
+                <div class="modal-footer">
+                    <a class="modal-close-button" href="#resume-page">CLOSE</a>
+                </div>
+            </div>
+
+            <div id="work-experience-modal" class="modal">
+                <div class="modal-text" id="work-experience-modal-text">
+                    <h1>Work Experience</h1>
+                    <div class="first-item" id="work-experience-first-item">
+                        <img class="resume-logo" src="images/logos/uh-logo.jpeg" alt="University of Houston Logo">
+                        <ul class="resume-list work-experience-resume-list">
+                            <li>University of Houston</li>
+                            <li>TA for Honors Statics and Dynamics</li>
+                            <li>IA for Experimental Methods</li>
+                            <li>International TA for Introduction to Engineering in Dalian, China</li>
+                            <li>October 2020 - December 2021</li>
+                        </ul>
+                    </div>
+                    <div class="second-item" id="work-experience-second-item">
+                        <img class="resume-logo" src="images/logos/conoco-phillips-logo.svg" alt="ConocoPhillips Logo">
+                        <ul class="resume-list work-experience-resume-list">
+                            <li>ConocoPhillips</li>
+                            <li>Production Engineering Intern</li>
+                            <li>Developed screening criterion for workover operations</li>
+                            <li>May 2021 - August 2021</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="modal-close-button" href="#resume-page">CLOSE</a>
+                </div>
+            </div>
+
+            <div id="certifications-modal" class="modal">
+                <div class="modal-text" id="certifications-modal-text">
+                    <h1>Certifications</h1>
+                    <div class="first-item" id="certifications-first-item">
+                        <img class="resume-logo" src="images/logos/free-code-camp-logo.png" alt="freeCodeCamp Logo">
+                        <ul class="resume-list certifications-resume-list">
+                            <li>freeCodeCamp</li>
+                            <li>JavaScript Data Structures & Algorithms Certification</li>
+                            <li>Applied fundamentals of JavaScript, OOP, and functional programming</li>
+                            <li>Issued: June 2022</li>
+                        </ul>
+                    </div>
+                    <div class="second-item" id="certifications-second-item">
+                        <img class="resume-logo" src="images/logos/free-code-camp-logo.png" alt="freeCodeCamp Logo">
+                        <ul class="resume-list certifications-resume-list">
+                            <li>freeCodeCamp</li>
+                            <li>Responsive Web Design Certification</li>
+                            <li>Used HTML and CSS to build a series of responsive designs</li>
+                            <li>Issued: January 2022</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer education-modal-footer">
+                    <a class="modal-close-button" href="#resume-page">CLOSE</a>
+                </div>
+            </div>
+
+            <div id="leadership-modal" class="modal">
+                <div class="modal-text" id="leadership-modal-text">
+                    <h1>Leadership</h1>
+                    <div class="first-item" id="leadership-first-item">
+                        <img class="resume-logo" src="images/logos/sase-logo.png" alt="Society of Asian Scientists and Engineers Logo">
+                        <ul class="resume-list leadership-resume-list">
+                            <li>Society of Asian Scientists & Engineers</li>
+                            <li>President</li>
+                            <li>Led officer board by bridging local and national levels of SASE</li>
+                            <li>Hosted 50+ professional workshops, socials, and community service events</li>
+                            <li>May 2021 - May 2022</li>
+                        </ul>
+                    </div>
+                    <div class="second-item" id="leadership-second-item">
+                        <img class="resume-logo" src="images/logos/sase-logo.png" alt="Society of Asian Scientists and Engineers Logo">
+                        <ul class="resume-list leadership-resume-list">
+                            <li>Society of Asian Scientists & Engineers</li>
+                            <li>Secretary</li>
+                            <li>Reimagined an apprenticeship program to develop interpersonal and leadership skills of members</li>
+                            <li>May 2020 - May 2021</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="modal-close-button" href="#resume-page">CLOSE</a>
+                </div>
+            </div>
+
+            <div id="honors-and-awards-modal" class="modal">
+                <div class="modal-text" id="honors-and-awards-modal-text">
+                    <h1>Honors & Awards</h1>
+                    <div class="honors-and-awards-grid">
+                        <div class="honor" id="valictorian">
+                            <p>Valedictorian of the College of Engineering at UH <span class="date">(May 2022)</span></p>
+                        </div>
+                        <div class="honor" id="microsoft-accelerate">
+                            <p>Microsoft Accelerate Scholar <span class="date">(May 2022)</span></p>
+                        </div>
+                        <div class="honor" id="william-a-brookshire">
+                            <p>William A. Brookshire Foundation Scholar <span class="date">(June 2021)</span></p>
+                        </div>
+                        <div class="honor" id="sunshine-brooks">
+                            <p>Sunshine Brooks Scholar <span class="date">(Jul. 2018 & Jul. 2019)</span></p>
+                        </div>
+                        <div class="honor" id="george-foundation">
+                            <p>George Foundation Scholar <span class="date">(Apr. 2018)</span></p>
+                        </div>
+                        <div class="honor" id="edmonds-educational">
+                            <p>Edmond's Educational Scholar <span class="date">(Aug. 2018)</span></p>
+                        </div>
+                        <div class="honor" id="academic-excellence">
+                            <p>UH Academic Excellence Scholar <span class="date">(Dec. 2017)</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="modal-close-button" href="#resume-page">CLOSE</a>
+                </div>
+            </div>
+        </section>
+        <section id="projects-page">
+            <div class="button-div">
+                <img class="carousel-button prev" src="images/arrow-buttons/prev-button.png" alt="Previous Button"></img>
+            </div>
+            <div id="projects-carousel">
+                <div class="project">
+                    <h2>RPG Battle Game</h2>
+                    <div class="project-box">
+                        <div class="project-description inspiration">
+                            <div class="project-subheading">
+                                <img class="project-symbol"src="images/logos/inspired-icon.png" alt="Star Symbol">
+                                <h3>Inspiration:</h3>
+                            </div>
+                            <p>I was inspired by the retro game Samurai Shodown to build a battle game between two characters. But instead of choosing from a 
+                                bank of character abilities, this console game allows users to set unique health levels, mana, and attacks for either a wizard, warrior, or archer.
+                            </p>
+                        </div>
+                        <div class="project-description what-it-does">
+                            <div class="project-subheading">
+                                <img class="project-symbol" src="images/logos/what-it-does-icon.png" alt="Information Symbol">
+                                <h3>What it does:</h3>
+                            </div>
+                            <p>This program demonstates object oriented programming, inheritance, and polymorphism as it includes subclasses of specific characters that derive from a base abstract class. 
+                               In addition, the player is able to choose their own characters, load in characters, and save their avatar
+                               at any point in the battle via file I/O. 
+                            </p>
+                        </div>
+                        <div class="project-description built-with">
+                            <div class="project-subheading">
+                                <img class="project-symbol" src="images/logos/built-with-icon.png" alt="Tools Symbol">
+                                <h3>Built with:</h3>
+                            </div>
+                            <p>This game is built with C++ and executes in the console.</p>
+                        </div>
+                        <div class="project-description learn-more">
+                            <a class="project-link" href="https://youtu.be/bkHCrGrFTpQ" target="_blank">
+                                <div class="project-footer">
+                                    <p>Click to learn more</p>
+                                    <img class="project-footer-button youtube"src="images/logos/youtube-logo.png" alt="YouTube Icon">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <h2>Tic-Tac-Toe</h2>
+                    <div class="project-box">
+                        <div class="project-description inspiration">
+                            <div class="project-subheading">
+                                <img class="project-symbol"src="images/logos/inspired-icon.png" alt="Star Symbol">
+                                <h3>Inspiration:</h3>
+                            </div>
+                            <p>Tic-tac-toe is as simple as can be, but it's a game that stands the test of time. I was inspired to build this classic game to familiarize
+                                myself with the project planning structure of brainstorming user stories, constructing wireframes, and writing pseudocode.</p>
+                        </div>
+                        <div class="project-description what-it-does">
+                            <div class="project-subheading">
+                                <img class="project-symbol" src="images/logos/what-it-does-icon.png" alt="Information Symbol">
+                                <h3>What it does:</h3>
+                            </div>
+                            <p>This program allows two people to play each other in a game of tic-tac-toe. It keeps track of whose turn it is, provides a warning 
+                                if one of the players attempt to mark a space that is already occupied, and conveys the results when the game ends. 
+                            </p>
+                        </div>
+                        <div class="project-description built-with">
+                            <div class="project-subheading">
+                                <img class="project-symbol" src="images/logos/built-with-icon.png" alt="Tools Symbol">
+                                <h3>Built with:</h3>
+                            </div>
+                            <p>This game is built with HTML, CSS, and JavaScript.</p>
+                        </div>
+                        <div class="project-description learn-more">
+                            <a class="project-link" href="https://github.com/lancechincodes/tic-tac-toe" target="_blank">
+                                <div class="project-footer">
+                                    <p>Click to learn more</p>
+                                    <img class="project-footer-button github" src="images/logos/github-logo.png" alt="Github Icon">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-div">
+                <img class="carousel-button next" src="images/arrow-buttons/next-button.png" alt="Next Button"></img>
+            </div>
+        </section>
+        <section id="interests-page">
+            <div id="interest-description-grid-left">
+                <div class="interest-description hide-interest-description" id="playing-sports-description">
+                    <p>Sports help me relax and stay fit. Whether I'm playing basketball, tennis, or ping pong, nothing beats friendly competition between friends and family!</p>
+                </div>
+                <div class="interest-description hide-interest-description" id="watching-movies-description">
+                    <p>Expecto patronum! Watching movies light up my nights, and easily is one of my favorite pastimes. Thrillers and mysteries are my favorite, but I enjoy a fair share of comedies and disney classics too <span id="watching-movies-italic">(especially Lion King)</span>!</p>
+                </div>
+            </div>
+
+            <div id="interests-layout">
+                <div class="top-interest">
+                    <div class="interest" id="playing-sports">
+                        <h3 id="interest-text-playing-sports">Playing Sports</h3>
+                    </div>
+                    <div class="interest" id="designing-graphics">
+                        <h3 id="interest-text-designing-graphics">Designing Graphics</h3>
+                    </div>
+                </div>
+                <div id="middle-interest">
+                    <div id="interest-heading">
+                        <h2>Outside of coding, I am...</h2>
+                    </div>
+                </div>
+                <div class="bottom-interest">
+                    <div class="interest" id="watching-movies">
+                        <h3 id="interest-text-watching-movies">Watching Movies</h3>
+                    </div>
+                    <div class="interest" id="volunteering">
+                        <h3 id="interest-text-volunteering">Volunteering</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="interest-description-grid-right">
+                <div class="interest-description hide-interest-description" id="designing-graphics-description">
+                    <p>Designing flyers, t-shirts, and logos are some of my favorite creative projects. Also, fun fact – I created a mockup of this website using Canva, a popular graphic design platform, prior to programming it!</p>
+                </div>
+                <div class="interest-description hide-interest-description" id="volunteering-description">
+                    <p>Giving back to my community is one of my top priorities. Most recently, I headed to Galveston, Texas to help clean the beaches and protect the wildlife!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

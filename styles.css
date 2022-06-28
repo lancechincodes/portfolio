@@ -1,0 +1,1904 @@
+/*----------------------------LARGE DEVICES (LAPTOPS/DESKTOPS)----------------------------*/
+
+/*--------------LARGE SECTIONS--------------*/
+body {
+    background: black;
+    color: white;
+    margin: 0;
+}
+
+section {
+    height: 800px;
+}
+
+/*--------------NAVIGATION BAR--------------*/
+#nav-bar {
+    height: 70px;
+    display: flex;
+    border: 3px solid white;
+    border-left: none;
+    border-right: none;
+    background: black;
+    position: fixed;
+    /* To make the nav bar fill the width and start from the */
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#nav-icons-div {
+    /* width: 30px; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#nav-icons-div .logo {
+    width: 50px;
+    height: auto;
+}
+
+#nav-words-div {
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#nav-words-div a {
+    color:white;
+    text-decoration: none;
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    padding: 20px;
+}
+
+/*--------------HOME PAGE--------------*/
+#home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#greeting-message {
+    animation-name: greetingMessageFadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+@keyframes greetingMessageFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#greeting-message h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 150px;
+    margin: 0;
+}
+
+#greeting-message h3 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#greeting-message #oval {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 5px;
+    line-height: 25px;
+    padding: 18px;
+    background: white;
+    border-radius: 50%;
+    color: black;
+}
+
+/*--------------ABOUT PAGE--------------*/
+#about-page {
+    display: flex;
+    align-content: center;
+    background: rgb(15, 15, 15);
+}
+
+#about-me-portrait {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin-top: 70px; /* counterreact fixed navbar */
+}
+
+#about-me-portrait #portrait {
+    width: 400px;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+#about-me-description {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 70px; /* counterreact fixed navbar */
+}
+
+#about-me-description h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 70px;
+    margin: 20px;
+    width: 90%;
+}
+
+#about-me-description p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 1.8;
+    width: 90%;
+}
+
+/*--------------RESUME PAGE--------------*/
+#resume-page {
+    display: flex;
+    justify-content: center;
+    align-content: center;    
+    position: relative;
+}
+
+#resume-grid {
+    display: grid;
+    height: 400px;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(2, 200px);
+    margin-top: 225px; /* counterreact fixed navbar */
+    justify-content: center;
+    align-content: center;
+}
+
+.rectangle {
+    font-family: 'Bangers', cursive;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-effect {
+    padding: 20px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.hide-border {
+    border: none;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    height: 550px;
+    width: 500px;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 5%;
+    z-index: 1;   
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 70px;
+    margin: auto; 
+}
+
+.modal-text {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.modal-text h1 {
+    font-family: 'Bangers', cursive;   
+    font-size: 55px; 
+    text-align: center;
+    margin: 0;
+}
+
+.first-item, .second-item {
+    display: flex;
+    margin: 20px;
+}
+
+.resume-logo {
+    width: 110px;
+    height: 110px;
+    border: 3px solid white;
+    align-self: center;
+}
+
+.resume-list {
+    font-size: 17px;
+    line-height: 1.5;
+    list-style-type: square;
+}
+
+.resume-list li:first-of-type {
+    font-weight: 700;
+}
+
+.modal-footer {
+    text-align: right;
+}
+
+.modal-close-button {
+    color: white;
+    background:rgb(15, 15, 15);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    border: 3px solid white;
+    font-family: 'Bangers', cursive;   
+    letter-spacing: 3px;
+    margin-right: 25px;
+}
+
+#skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(70px, 200px));
+    grid-template-rows: repeat(3, minmax(5px, 20px));
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    gap: 100px 30px;
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: white 3px solid;
+    width: 185px;
+    height: auto;
+    border-radius: 30px;
+    background-color: rgb(15, 15, 15);
+}
+
+.skill-icon {
+    width: 35px;
+    height: auto;
+    margin: auto 5px;
+}
+
+#work-experience-first-item, #work-experience-second-item {
+    margin: 5px;
+}
+
+#certifications-first-item, #certifications-second-item {
+    margin: 5px;
+}
+
+#leadership-first-item, #leadership-second-item {
+    margin: 5px;
+}
+
+.leadership-resume-list {
+    font-size: 16px;
+}
+
+.honor {
+    font-family: 'Roboto', sans-serif;
+    border: 3px solid white;
+    margin: 13px;
+    border: white 3px solid;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 15px;
+    background: rgb(15, 15, 15);
+    color: white;
+    font-weight: 700;
+}
+
+.honor p {
+    margin: 8px;
+}
+
+.date {
+    font-style: italic;
+    font-weight: 300;
+}
+
+#education-rectangle {
+    background: url('images/background-images/education-background.png') no-repeat;
+    background-position: center;
+}
+
+#skills-rectangle {
+    background: url('images/background-images/skills-background.png') no-repeat;
+    background-position: center;
+}
+
+#work-experience-rectangle {
+    background: url('images/background-images/work-experience-background.png') no-repeat;
+    background-position: center;
+}
+
+#certifications-rectangle {
+    background: url('images/background-images/certifications-background.png') no-repeat;
+    background-position: center;
+}
+
+#leadership-rectangle {
+    background: url('images/background-images/leadership-background.png') no-repeat;
+    background-position: center;
+}
+
+#honors-and-awards-rectangle {
+    background: url('images/background-images/honors-and-awards-background.png') no-repeat;
+    background-position: center;
+}
+
+/*--------------PROJECTS PAGE--------------*/
+#projects-page {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: rgb(15, 15, 15);
+}
+
+.button-div {
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;    
+}
+
+.carousel-button {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#projects-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 570px;
+    width: 60vw;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 150px;
+    border: 3px solid white;
+    border-radius: 30px;
+    background: black;
+}
+
+.project {
+    display: none;
+}
+
+.project:first-of-type {
+    display: block;
+}
+
+.project h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bangers', cursive;   
+    margin: 20px 20px 0 20px;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.project-description {
+    margin: 0 20px;
+}
+
+.project-subheading {
+    display: flex;
+    align-items: center;
+}
+
+.project-symbol {
+    width: 70px;
+    height: 70px;
+}
+
+.project-description h3 {
+    font-family: 'Bangers', cursive;   
+    font-size: 30px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.project-description p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0px;;
+}
+
+.learn-more {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: white
+}
+
+.project-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-footer-hover-effect {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.project-footer p {
+    font-family: 'Bangers', cursive;   
+    font-size: calc(8px + vw);
+    margin: 5px;
+    margin-right: 15px;
+}
+
+.project-footer-button.youtube {
+    width: 23px;
+    height: auto;
+}
+.project-footer-button.github {
+    width: 22px;
+    height: auto;
+}
+
+/*--------------INTERESTS PAGE--------------*/
+#interests-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bangers', cursive;   
+}
+
+#interests-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+}
+
+.top-interest, .bottom-interest {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#middle-interest {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.interest {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;;
+}
+
+#playing-sports {
+    position: relative;
+    top: 100px;
+    right: 100px;
+    font-size: 30px;
+}
+
+#playing-sports:hover {
+    color: transparent;
+    background: url('images/lance-pictures/lance-basketball.png') no-repeat;
+    background-size: cover;
+}
+
+#designing-graphics {
+    position: relative;
+    top: 100px;
+    right: -100px;
+    font-size: 28px;
+}
+
+#designing-graphics:hover {
+    color: transparent;
+    background: url('images/logos/lc-logo-background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#watching-movies {
+    position: relative;
+    top: -100px;
+    right: 100px;
+    font-size: 30px;
+}
+
+#watching-movies:hover {
+    color: transparent;
+    background: url('images/background-images/hp-trio-background.png') no-repeat;
+    background-size: cover;
+}
+
+#volunteering {
+    position: relative;
+    top: -100px;
+    right: -100px;
+    font-size: 30px;
+}
+
+#volunteering:hover {
+    color: transparent;
+    background: url('images/background-images/volunteering-background.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#interest-heading {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    display: flex;
+    align-items: center;
+}
+
+
+#interest-description-grid-left {
+    display: grid;
+    grid-template-columns: repeat(1, 250px);
+    grid-template-rows: repeat(2, 300px);
+    align-items: center;
+    margin: 100px 100px;
+}
+
+#interest-description-grid-right {
+    display: grid;
+    grid-template-columns: repeat(1, 250px);
+    grid-template-rows: repeat(2, 300px);
+    align-items: center;
+    margin: 100px 100px;
+}
+
+.interest-description {
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 3px;
+}
+
+.interest-description p {
+    margin: 10px;
+}
+
+#watching-movies-italic {
+    font-style: italic;
+}
+
+.hide-interest-description {
+    visibility: hidden;
+}
+
+/*----------------------------EXTRA SMALL DEVICES (iPhone SE)----------------------------*/
+@media screen and (max-width: 385px) {
+    /*--------------NAVIGATION BAR--------------*/
+    #nav-bar {
+        border-left: none;
+        border-right: none;
+        display: flex;
+        width: 100vw;
+    }
+
+    #nav-icons-div {
+        padding: 5px;
+        float: left;
+    }
+       
+    #nav-icons-div .logo {
+        width: 50px;
+    }
+    
+    #nav-words-div {
+        display: flex;
+        float: right;
+        padding: 4px;
+    }
+    
+    #nav-words-div a {
+        font-size: 12px;  
+        padding: 5px;
+    }
+
+    /*--------------HOME PAGE--------------*/
+    #greeting-message h3 {
+        font-size: 20px;
+    }
+
+    #greeting-message h1 {
+        font-size: 80px;
+    }
+
+    #greeting-message #oval {
+        font-size: 15px;
+    }
+
+
+    /*--------------ABOUT PAGE--------------*/
+    #about-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-me-portrait {
+        margin-top: 120px;
+    }
+
+    #about-me-portrait #portrait {
+        width: 200px;
+    }
+
+    #about-me-description {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #about-me-description h1 {
+        margin: 5px;
+        align-self: center;
+        text-align: center;
+        width: 100vw;
+        font-size: 40px;
+    }
+
+    #about-me-description p {
+        margin: 5px;
+        align-self: center;
+        width: 80vw;
+        font-size: 15px;
+    }
+   
+    /*--------------RESUME PAGE--------------*/
+    #resume-grid {
+        display: block;
+        margin-top: 80px;
+    }
+
+    .rectangle {
+        height: 103px;
+        width: 300px;
+    }
+
+    .modal {
+        width: 320px;
+        height: 120px;
+    }
+
+    .modal-text {
+        padding: 8px;
+    }
+
+    .modal h1 {
+        font-size: 40px;
+        margin: 5px;
+    }
+
+    .first-item, .second-item {
+        margin: 0;
+    }
+
+    .resume-logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .resume-list {
+        font-size: 15px;
+    }   
+    
+    #skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(3, 20px);
+        gap: 50px 0px;
+        grid-template-columns: repeat;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .skill {
+        height: 45px;
+        width: 125px;
+        margin: 15px auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .skill-icon {
+        width: 25px;
+    }
+
+    .work-experience-resume-list {
+        font-size: 11.5px;
+    }
+    
+    .certifications-resume-list {
+        font-size: 12px;
+    }
+
+    .leadership-resume-list {
+        font-size: 11px;
+    }
+
+    .honor {
+        border: white 1.5px solid;
+        border-radius: 30px;
+        font-size: 12px;
+    }
+
+    #education-modal {
+        height: 420px;
+    }
+
+    #education-modal-text {
+        height: 360px;
+    }
+
+    #skills-modal {
+        height: 350px;
+    }
+
+    #skills-modal-text {
+        height: 290px;
+    }
+
+    #work-experience-modal {
+        height: 460px;
+    }
+
+    #work-experience-modal-text {
+        height: 400px;
+    }
+
+    #certifications-modal {
+        height: 460px;
+    }
+
+    #certifications-modal-text {
+        height: 400px;
+    }
+
+    #leadership-modal {
+        height: 480px;
+    }
+
+    #leadership-modal-text {
+        height: 420px;
+    }
+
+    #honors-and-awards-modal {
+        height: 480px;
+    }
+
+    #honors-and-awards-modal-text {
+        height: 420px;
+    }
+
+    /*--------------PROJECTS PAGE--------------*/
+    .button-div {
+        width: 50px;
+        margin-top: 12vh;
+    }
+
+    .carousel-button {
+        width: 30px;
+        height: auto;
+    }
+
+    #projects-carousel {
+        margin-left: 0;
+        margin-right: 0;
+        width: 260px;
+        height: 500px;
+    }
+
+    .project h2 {
+        font-size: 30px;
+    }
+
+    .project-symbol {
+        width: 30px;
+        height: auto;
+    }
+
+    .project-subheading h3 {
+        font-size: 18px;
+    }
+
+    .project-description p {
+        font-size: 13px;
+    }
+
+    .project-footer { 
+        width: 45vw;
+        height: 5vh;
+    }
+
+    /*--------------INTERESTS PAGE--------------*/
+    .interest {
+        width: 150px;
+        height: 150px;
+    }
+
+    #playing-sports {
+        position: relative;
+        top: 0px;
+        right: -10px;
+        font-size: 25px;
+    }
+
+    #designing-graphics {
+        position: relative;
+        top: 0px;
+        right: 10px;
+        font-size: 25px;
+    }
+
+    #watching-movies {
+        position: relative;
+        top: 0px;
+        right: -10px;
+        font-size: 25px;
+    }
+
+    #volunteering {
+        position: relative;
+        top: 0px;
+        right: 10px;
+        font-size: 25px;
+    }
+
+    #interest-heading {
+        width: 200px; 
+        height: 200px;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .interest-description {
+        display: none;
+    }
+}
+
+/*----------------------------SMALL DEVICES (iPhone 12)----------------------------*/
+@media screen and (min-width: 386px) and (max-width: 512px) {
+    /*--------------NAVIGATION BAR--------------*/
+    #nav-bar {
+        border-left: none;
+        border-right: none;
+        display: flex;
+        width: 100vw;
+    }
+
+    #nav-icons-div {
+        padding: 7px;
+        float: left;
+    }
+       
+    #nav-icons-div .logo {
+        width: 50px;
+    }
+    
+    #nav-words-div {
+        display: flex;
+        float: right;
+        padding: 5px;
+    }
+    
+    #nav-words-div a {
+        font-size: 16.5px;  
+        padding: 5px;
+    }
+
+    /*--------------HOME PAGE--------------*/
+    #greeting-message h3 {
+        font-size: 23px;
+    }
+
+    #greeting-message h1 {
+        font-size: 83px;
+    }
+
+    #greeting-message #oval {
+        font-size: 18px;
+    }
+
+    /*--------------ABOUT PAGE--------------*/
+    #about-page {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #about-me-portrait {
+        margin-top: 120px;
+    }
+
+    #about-me-portrait #portrait {
+        width: 220px;
+    }
+
+    #about-me-description {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    #about-me-description h1 {
+        margin: 5px;
+        align-self: center;
+        text-align: center;
+        width: 100vw;
+        font-size: 50px;
+    }
+
+    #about-me-description p {
+        margin: 5px;
+        align-self: center;
+        width: 350px;
+        font-size: 16.5px;
+    }
+   
+    /*--------------RESUME PAGE--------------*/
+    #resume-grid {
+        display: block;
+        margin-top: 80px;
+    }
+
+    .rectangle {
+        height: 103px;
+        width: 300px;
+    }
+
+    .modal {
+        width: 320px;
+        height: 120px;
+    }
+
+    .modal-text {
+        padding: 8px;
+    }
+
+    .modal h1 {
+        font-size: 40px;
+        margin: 5px;
+    }
+
+    .first-item, .second-item {
+        margin: 0;
+    }
+
+    .resume-logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .resume-list {
+        font-size: 15px;
+    }   
+    
+    #skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(3, 20px);
+        gap: 50px 0px;
+        grid-template-columns: repeat;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .skill {
+        height: 45px;
+        width: 125px;
+        margin: 15px auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .skill-icon {
+        width: 25px;
+    }
+
+    .work-experience-resume-list {
+        font-size: 11.5px;
+    }
+    
+    .certifications-resume-list {
+        font-size: 12px;
+    }
+
+    .leadership-resume-list {
+        font-size: 11px;
+    }
+
+    .honor {
+        border: white 1.5px solid;
+        border-radius: 30px;
+        font-size: 12px;
+    }
+
+    #education-modal {
+        height: 420px;
+    }
+
+    #education-modal-text {
+        height: 360px;
+    }
+
+    #skills-modal {
+        height: 350px;
+    }
+
+    #skills-modal-text {
+        height: 290px;
+    }
+
+    #work-experience-modal {
+        height: 460px;
+    }
+
+    #work-experience-modal-text {
+        height: 400px;
+    }
+
+    #certifications-modal {
+        height: 460px;
+    }
+
+    #certifications-modal-text {
+        height: 400px;
+    }
+
+    #leadership-modal {
+        height: 480px;
+    }
+
+    #leadership-modal-text {
+        height: 420px;
+    }
+
+    #honors-and-awards-modal {
+        height: 480px;
+    }
+
+    #honors-and-awards-modal-text {
+        height: 420px;
+    }
+
+    /*--------------PROJECTS PAGE--------------*/
+    .button-div {
+        width: 50px;
+        margin-top: 150px;
+    }
+
+    .carousel-button {
+        width: 30px;
+        height: auto;
+    }
+
+    #projects-carousel {
+        margin-left: 0;
+        margin-right: 0;
+        width: 300px;
+        height: 600px;
+        margin-top: 100px;
+    }
+
+    .project h2 {
+        font-size: 35px;
+    }
+
+    .project-symbol {
+        width: 45px;
+        height: auto;
+    }
+
+    .project-subheading h3 {
+        font-size: 20px;
+    }
+
+    .project-description p {
+        font-size: 15px;
+    }
+
+    .project-footer { 
+        width: 170px;
+        height: 25px;
+    }
+
+    /*--------------INTERESTS PAGE--------------*/
+    .interest {
+        width: 150px;
+        height: 150px;
+    }
+
+    #playing-sports {
+        position: relative;
+        top: 0px;
+        right: -10px;
+        font-size: 25px;
+    }
+
+    #designing-graphics {
+        position: relative;
+        top: 0px;
+        right: 10px;
+        font-size: 25px;
+    }
+
+    #watching-movies {
+        position: relative;
+        top: 0px;
+        right: -10px;
+        font-size: 25px;
+    }
+
+    #volunteering {
+        position: relative;
+        top: 0px;
+        right: 10px;
+        font-size: 25px;
+    }
+
+    #interest-heading {
+        width: 200px; 
+        height: 200px;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .interest-description {
+        display: none;
+    }
+}
+
+/*----------------------------MEDIUM DEVICES (iPad Mini)----------------------------*/
+@media screen and (min-width: 513px) and (max-width: 768px) {
+
+    /*--------------NAVIGATION BAR--------------*/
+    #nav-bar {
+        border-left: none;
+        border-right: none;
+        display: flex;
+        width: 100vw;
+    }
+
+    #nav-icons-div {
+        padding: 7px;
+        float: left;
+    }
+       
+    #nav-icons-div .logo {
+        width: 50px;
+    }
+    
+    #nav-words-div {
+        display: flex;
+        float: right;
+        padding: 5px;
+    }
+    
+    #nav-words-div a {
+        font-size: 18px;  
+        padding: 20px;
+    }
+
+    /*--------------HOME PAGE--------------*/
+    #greeting-message h3 {
+        font-size: 30px;
+    }
+
+    #greeting-message h1 {
+        font-size: 110px;
+    }
+
+    #greeting-message #oval {
+        font-size: 20px;
+    }
+
+    /*--------------ABOUT PAGE--------------*/
+    #about-page {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #about-me-portrait {
+        margin-top: 120px;
+    }
+
+    #about-me-portrait #portrait {
+        width: 220px;
+    }
+
+    #about-me-description {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    #about-me-description h1 {
+        margin: 5px;
+        align-self: center;
+        text-align: center;
+        width: 350px;
+        font-size: 50px;
+    }
+
+    #about-me-description p {
+        margin: 5px;
+        align-self: center;
+        width: 500px;
+        font-size: 20px;
+    }
+
+    /*--------------RESUME PAGE--------------*/
+    #resume-grid {
+        display: grid;
+        height: 400px;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(3, 150px);
+        margin-top: 200px; /* counterreact fixed navbar */
+        justify-content: center;
+        align-content: center;
+    }
+
+    .modal {
+        width: 500px;
+    }
+
+    #education-modal {
+        height: 500px;
+    }
+
+    #education-modal-text {
+        height: 400px;
+    }
+
+    #skills-modal {
+        height: 510px;
+    }
+
+    #skills-modal-text {
+        height: 415px;
+    }
+
+    #work-experience-modal {
+        height: 510px;
+    }
+
+    #work-experience-modal-text {
+        height: 420px;
+    }
+
+    #certifications-modal {
+        height: 500px;
+    }
+
+    #certifications-modal-text {
+        height: 400px;
+    }
+
+    #leadership-modal {
+        height: 510px;
+    }
+
+    #leadership-modal-text {
+        height: 420px;
+    }
+
+    #honors-and-awards-modal {
+        height: 520px;
+    }
+
+    #honors-and-awards-modal-text {
+        height: 435px;
+    }
+    /*--------------PROJECTS PAGE--------------*/
+    .button-div {
+        width: 50px;
+        margin-top: 150px;
+    }
+
+    .carousel-button {
+        width: 40px;
+        height: auto;
+    }
+
+    #projects-carousel {
+        margin-left: 0;
+        margin-right: 0;
+        width: 420px;
+        height: 600px;
+        margin-top: 100px;
+    }
+
+    .project h2 {
+        font-size: 40px;
+    }
+
+    .project-symbol {
+        width: 45px;
+        height: auto;
+    }
+
+    .project-subheading h3 {
+        font-size: 23px;
+    }
+
+    .project-description p {
+        font-size: 17px;
+    }
+
+    .project-footer { 
+        width: 200px;
+        height: 28px;
+    }
+    /*--------------INTERESTS PAGE--------------*/
+    .interest {
+        width: 150px;
+        height: 150px;
+    }
+
+    #playing-sports {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 25px;
+    }
+
+    #designing-graphics {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 25px;
+    }
+
+    #watching-movies {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 25px;
+    }
+
+    #volunteering {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 25px;
+    }
+
+    #interest-heading {
+        width: 200px; 
+        height: 200px;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .interest-description {
+        display: none;
+    }
+}
+
+/*----------------------------MEDIUM PLUS DEVICES (iPad)----------------------------*/
+@media screen and (min-width: 769px) and (max-width: 960px) {
+
+    /*--------------NAVIGATION BAR--------------*/
+    #nav-bar {
+        border-left: none;
+        border-right: none;
+        display: flex;
+        width: 100vw;
+    }
+
+    #nav-icons-div {
+        padding: 7px;
+        float: left;
+    }
+       
+    #nav-icons-div .logo {
+        width: 60px;
+    }
+    
+    #nav-words-div {
+        display: flex;
+        float: right;
+        padding: 5px;
+    }
+    
+    #nav-words-div a {
+        font-size: 24px;  
+        padding: 20px;
+    }
+
+    /*--------------HOME PAGE--------------*/
+    #greeting-message h3 {
+        font-size: 30px;
+    }
+
+    #greeting-message h1 {
+        font-size: 110px;
+    }
+
+    #greeting-message #oval {
+        font-size: 20px;
+    }
+
+    /*--------------ABOUT PAGE--------------*/
+    #about-page {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #about-me-portrait {
+        margin-top: 120px;
+    }
+
+    #about-me-portrait #portrait {
+        width: 240px;
+    }
+
+    #about-me-description {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    #about-me-description h1 {
+        margin: 5px;
+        align-self: center;
+        text-align: center;
+        width: 350px;
+        font-size: 50px;
+    }
+
+    #about-me-description p {
+        margin: 5px;
+        align-self: center;
+        width: 600px;
+        font-size: 20px;
+    }
+
+    /*--------------RESUME PAGE--------------*/
+    #resume-grid {
+        display: grid;
+        height: 400px;
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(3, 180px);
+        margin-top: 200px; /* counterreact fixed navbar */
+        justify-content: center;
+        align-content: center;
+    }
+
+    .modal {
+        width: 500px;
+    }
+
+    #education-modal {
+        height: 500px;
+    }
+
+    #education-modal-text {
+        height: 400px;
+    }
+
+    #skills-modal {
+        height: 510px;
+    }
+
+    #skills-modal-text {
+        height: 415px;
+    }
+
+    #work-experience-modal {
+        height: 510px;
+    }
+
+    #work-experience-modal-text {
+        height: 420px;
+    }
+
+    #certifications-modal {
+        height: 500px;
+    }
+
+    #certifications-modal-text {
+        height: 400px;
+    }
+
+    #leadership-modal {
+        height: 510px;
+    }
+
+    #leadership-modal-text {
+        height: 420px;
+    }
+
+    #honors-and-awards-modal {
+        height: 520px;
+    }
+
+    #honors-and-awards-modal-text {
+        height: 435px;
+    }
+    /*--------------PROJECTS PAGE--------------*/
+    .button-div {
+        width: 50px;
+        margin-top: 150px;
+    }
+
+    .carousel-button {
+        width: 40px;
+        height: auto;
+    }
+
+    #projects-carousel {
+        margin-left: 0;
+        margin-right: 0;
+        width: 550px;
+        height: 600px;
+        margin-top: 100px;
+    }
+
+    .project h2 {
+        font-size: 50px;
+    }
+
+    .project-symbol {
+        width: 45px;
+        height: auto;
+    }
+
+    .project-subheading h3 {
+        font-size: 25px;
+    }
+
+    .project-description p {
+        font-size: 20px;
+    }
+
+    .project-footer { 
+        width: 200px;
+        height: 28px;
+    }
+    /*--------------INTERESTS PAGE--------------*/
+    .interest {
+        width: 170px;
+        height: 170px;
+    }
+
+    #playing-sports {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 25px;
+    }
+
+    #designing-graphics {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 25px;
+    }
+
+    #watching-movies {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 25px;
+    }
+
+    #volunteering {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 25px;
+    }
+
+    #interest-heading {
+        width: 250px; 
+        height: 250px;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .interest-description {
+        display: none;
+    }
+}
+
+/*----------------------------MEDIUM PLUS PLUS DEVICES (Small macbook)----------------------------*/
+@media screen and (min-width: 961px) and (max-width: 1280px) {
+
+    /*--------------NAVIGATION BAR--------------*/
+    #nav-bar {
+        border-left: none;
+        border-right: none;
+        display: flex;
+        width: 100vw;
+    }
+
+    #nav-icons-div {
+        padding: 7px;
+        float: left;
+    }
+       
+    #nav-icons-div .logo {
+        width: 60px;
+    }
+    
+    #nav-words-div {
+        display: flex;
+        float: right;
+        padding: 5px;
+    }
+    
+    #nav-words-div a {
+        font-size: 26px;  
+        padding: 20px;
+    }
+
+    /*--------------HOME PAGE--------------*/
+    #greeting-message h3 {
+        font-size: 30px;
+    }
+
+    #greeting-message h1 {
+        font-size: 135px;
+    }
+
+    #greeting-message #oval {
+        font-size: 20px;
+    }
+
+    /*--------------ABOUT PAGE--------------*/
+    #about-page {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #about-me-portrait {
+        margin-top: 80px;
+    }
+
+    #about-me-portrait #portrait {
+        width: 330px;
+    }
+
+    #about-me-description {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    #about-me-description h1 {
+        margin: 5px;
+        align-self: center;
+        text-align: center;
+        width: 350px;
+        font-size: 53px;
+    }
+
+    #about-me-description p {
+        margin: 5px;
+        align-self: center;
+        width: 750px;
+        font-size: 22px;
+    }
+
+    /*--------------RESUME PAGE--------------*/
+    #resume-grid {
+        display: grid;
+        height: 400px;
+        grid-template-columns: repeat(2, 370px);
+        grid-template-rows: repeat(3, 200px);
+        margin-top: 200px; /* counterreact fixed navbar */
+        justify-content: center;
+        align-content: center;
+    }
+
+    .modal {
+        width: 550px;
+    }
+
+    #education-modal {
+        height: 500px;
+    }
+
+    #education-modal-text {
+        height: 400px;
+    }
+
+    #skills-modal {
+        height: 510px;
+    }
+
+    #skills-modal-text {
+        height: 415px;
+    }
+
+    #work-experience-modal {
+        height: 510px;
+    }
+
+    #work-experience-modal-text {
+        height: 420px;
+    }
+
+    #certifications-modal {
+        height: 500px;
+    }
+
+    #certifications-modal-text {
+        height: 400px;
+    }
+
+    #leadership-modal {
+        height: 510px;
+    }
+
+    #leadership-modal-text {
+        height: 420px;
+    }
+
+    #honors-and-awards-modal {
+        height: 520px;
+    }
+
+    #honors-and-awards-modal-text {
+        height: 435px;
+    }
+    /*--------------PROJECTS PAGE--------------*/
+    .button-div {
+        width: 50px;
+        margin-top: 150px;
+    }
+
+    .carousel-button {
+        width: 40px;
+        height: auto;
+    }
+
+    #projects-carousel {
+        margin-left: 0;
+        margin-right: 0;
+        width: 650px;
+        height: 600px;
+        margin-top: 100px;
+    }
+
+    .project h2 {
+        font-size: 53px;
+    }
+
+    .project-symbol {
+        width: 55px;
+        height: auto;
+    }
+
+    .project-subheading h3 {
+        font-size: 27px;
+    }
+
+    .project-description p {
+        font-size: 20px;
+    }
+
+    .project-footer { 
+        width: 200px;
+        height: 28px;
+    }
+    /*--------------INTERESTS PAGE--------------*/
+    .interest {
+        width: 180px;
+        height: 180px;
+    }
+
+    #playing-sports {
+        position: relative;
+        top: 50px;
+        right: 50px;
+        font-size: 25px;
+    }
+
+    #designing-graphics {
+        position: relative;
+        top: 50px;
+        right: -50px;
+        font-size: 25px;
+    }
+
+    #watching-movies {
+        position: relative;
+        top: -50px;
+        right: 50px;
+        font-size: 25px;
+    }
+
+    #volunteering {
+        position: relative;
+        top: -50px;
+        right: -50px;
+        font-size: 25px;
+    }
+
+    #interest-heading {
+        width: 260px; 
+        height: 260px;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .interest-description {
+        display: none;
+    }
+}
