@@ -21,9 +21,9 @@ Hey there, my name is Lance Chin and I'm proud to present my personal portfolio!
 To view and suggest edits to this project locally:
 1. Fork and clone this repository
 2. Change into the new directory and create a development branch 
-2. Add and commit suggested edits
-3. Push edits to the remote
-4. Submit a pull request for me to view
+3. Add and commit suggested edits
+4. Push edits to the remote
+5. Submit a pull request for me to view
 
 ## User Stories 🗣
 As a user, I want to:
