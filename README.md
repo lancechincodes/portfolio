@@ -54,7 +54,7 @@ Manipulating flexbox and media queries were difficult challenges yet so importan
 ## What's Next 🏁
 Although the first version is complete, the marathon continues and so does my portfolio. For future improvements, I will implement more interactions on the homepage, a section for demoing deployed projects, and an "Our Innovative World" blog that scopes out the latest and greatest technology. 
 ## Reflection 🙌
-I thoroughly enjoyed building this project! While not easy, it served as an amazing instructor – teaching me how CSS, HTML, and JavaScript are used collaboratively to create interactive and responsive webpages, the importance of git version control, and to approach challenges with an optimstic mindset. I hope you enjoyed my portfolio and feel free to leave me feedback!
+I thoroughly enjoyed building this project! It served as an amazing instructor – teaching me how CSS, HTML, and JavaScript are used collaboratively to create interactive and responsive webpages, the importance of git version control, and to approach challenges with an optimistic mindset. I hope you enjoyed my portfolio and feel free to leave me feedback!
 
 ## Connect With Me 👥
 <p align="left">
