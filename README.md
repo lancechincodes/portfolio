@@ -21,9 +21,9 @@ Hey there, my name is Lance Chin and I'm proud to present my personal portfolio!
 To view and suggest edits to this project locally:
 1. Fork and clone this repository
 2. Change into the new directory and create a development branch 
-2. Add and commit suggested edits
-3. Push edits to the remote
-4. Submit a pull request for me to view
+3. Add and commit suggested edits
+4. Push edits to the remote
+5. Submit a pull request for me to view
 
 ## User Stories 🗣
 As a user, I want to:
@@ -54,7 +54,7 @@ Manipulating flexbox and media queries were difficult challenges yet so importan
 ## What's Next 🏁
 Although the first version is complete, the marathon continues and so does my portfolio. For future improvements, I will implement more interactions on the homepage, a section for demoing deployed projects, and an "Our Innovative World" blog that scopes out the latest and greatest technology. 
 ## Reflection 🙌
-I thoroughly enjoyed building this project! While not easy, it served as an amazing instructor – teaching me how CSS, HTML, and JavaScript are used collaboratively to create interactive and responsive webpages, the importance of git version control, and to approach challenges with an optimstic mindset. I hope you enjoyed my portfolio and feel free to leave me feedback!
+I thoroughly enjoyed building this project! It served as an amazing instructor – teaching me how CSS, HTML, and JavaScript are used collaboratively to create interactive and responsive webpages, the importance of git version control, and to approach challenges with an optimistic mindset. I hope you enjoyed my portfolio and feel free to leave me feedback!
 
 ## Connect With Me 👥
 <p align="left">

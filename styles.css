@@ -16,7 +16,8 @@ body {
 }
 
 section {
-    height: 800px;
+    /* height: 800px; */
+    height: 100vh;
 }
 
 /*--------------NAVIGATION BAR--------------*/
